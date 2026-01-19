@@ -26,7 +26,7 @@ recent_posts:
   enable: true
 draft: false
 ---
-## **More About Me**
+## About Me
 
 ​
 We are building the world's first truly scalable visual activity understanding platform at Retrocausal. We have started out with the manufacturing assembly vertical, where we are seeing a ton of interest from the biggest manufacturers. I have had the opportunity to visit more than two dozen factories and work alongside operators and industrial engineers. Our technology has won awards from NASA JPL, Embedded Vision Alliance, IEEE VSTG, and CB Insights, and raised \$4.5M from institutional and corporate investors.
@@ -34,5 +34,6 @@ We are building the world's first truly scalable visual activity understanding p
 ​
 
 In a past life, I authored more than 20 peer-reviewed publications on visual activity understanding, 3D scene understanding, learning from synthetic data, and machine learning systems, which were cited by every major lab from MIT, Stanford, and CMU, to Apple, Google, and Baidu.
+
 
 I am also an inventor on almost 20 US patents or patent applications, and have shipped AI-first products including Microsoft HoloLens, Vuforia AR platform, MVTec Halcon, and camera based self-driving systems.
