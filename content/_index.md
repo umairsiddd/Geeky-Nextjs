@@ -35,5 +35,4 @@ We are building the world's first truly scalable visual activity understanding p
 
 In a past life, I authored more than 20 peer-reviewed publications on visual activity understanding, 3D scene understanding, learning from synthetic data, and machine learning systems, which were cited by every major lab from MIT, Stanford, and CMU, to Apple, Google, and Baidu.
 
-
 I am also an inventor on almost 20 US patents or patent applications, and have shipped AI-first products including Microsoft HoloLens, Vuforia AR platform, MVTec Halcon, and camera based self-driving systems.
