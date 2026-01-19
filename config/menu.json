@@ -24,13 +24,13 @@
       "url": "/books"
     },
     {
-      "name": "Contact",
-      "url": "/contact"
-    },
-    {
       "name": "Blogs",
       "url": "/blogs",
       "children": []
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
     }
   ],
   "footer": [
