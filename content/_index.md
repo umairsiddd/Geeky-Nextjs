@@ -1,7 +1,7 @@
 ---
 banner:
   title: Zeeshan Zia
-  title_small: President @ Retrocausal
+  title_small: President, Retrocausal
   content: >-
     I authored more than 20 peer-reviewed publications on visual activity
     understanding, 3D scene understanding, learning from synthetic data, and
@@ -24,7 +24,7 @@ promotion:
 recent_posts:
   title: Recent Posts
   enable: true
-draft: true
+draft: false
 ---
 ## **More About Me**
 
