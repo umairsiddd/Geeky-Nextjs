@@ -26,6 +26,11 @@
     {
       "name": "Contact",
       "url": "/contact"
+    },
+    {
+      "name": "Blogs",
+      "url": "/blogs",
+      "children": []
     }
   ],
   "footer": [
@@ -45,5 +50,6 @@
       "name": "Privacy Policy",
       "url": "#"
     }
-  ]
+  ],
+  "draft": false
 }
