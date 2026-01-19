@@ -1,7 +1,5 @@
 ---
-industry_experience:
-  - /images/author.png
-  - /images/author.png
+industry_experience: []
 ---
 \---
 banner:
