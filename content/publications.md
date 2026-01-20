@@ -4,188 +4,255 @@ industry_experience:
 ---
 # Publications
 
-### 2020
-
-* S. Haresh, S. Kumar, M.Z. Zia, Q.H. Tran.
-
-&#x20;      **Towards Anomaly Detection in Dashcam Videos.**
-
-&#x20;     _31st IEEE Intelligent Vehicles Symposium_ 2020  **Conference**
-
-
-&#x20;
-
-### 2019
-
-* H. Coskun, M.Z. Zia, B. Tekin, F. Bogo, N. Navab, F. Tombari, H. Sawhney.
-
-&#x20;     **Domain-Specific Priors and Meta Learning for Low-shot First-Person Action Recognition.**
-
-&#x20;    _arXiv_ 2019  **Technical Report**
-
-
-&#x20;
-
-### 2018
-
-* M.F. Salem, Q.H. Tran, M.Z. Zia, P. Vernaza, M. Chandraker.
-
-&#x20;      **Hierarchical Metric Learning and Matching for 2D and 3D Geometric Correspondences.**
-
-&#x20;     _European Conference on Computer Vision (ECCV)_ 2018  **Conference**
-
-
-&#x20;
-
-* C. Li, M.Z. Zia, X. Yu, G. Hager, M. Chandraker.
-
-&#x20;      **Deep Supervision with Intermediate Concepts.**
-
-&#x20;     _EEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)_ 2018  **Journal**
-
-
-&#x20;
-
-### 2017
-
-* C. Li, M.Z. Zia, X. Yu, G. Hager, M. Chandraker.
-
-**Deep Supervision with Shape Concepts for Occlusion-Aware 3D Object Parsing.**
-
-_IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2017  **Conference**
-
-
-&#x20;
-
-### 2016
-
-* F. Chayya, D. Reddy, S. Upadhyay, V. Chari, M.Z. Zia, K.M. Krishna.
-
-**Monocular Reconstruction of Vehicles: Combining SLAM with Shape Priors.**
-
-_International Conference on Robotics and Automation (ICRA)_ 2016  **Conference**
-
-
-&#x20;
-
-* M.Z. Zia, L. Nardi, A. Jack, E. Vespa, Bruno Bodin, P.H.J. Kelly, A.J. Davison.
-
-**Comparative Design Space Exploration of Dense and Semi-Dense SLAM.**
-
-_International Conference on Robotics and Automation (ICRA)_ 2016  **Conference**
-
-
-&#x20;
-
-* B. Bodin, L. Nardi, M.Z. Zia, H. Wagstaff, G.S. Shenoy, M. Emani, J. Mawer, C. Kotselidis, A. Nisbet, M. Lujan, B. Franke, P.H.J. Kelly, M. O'Boyle.
-
-**Integrating Algorithmic Parameters into Benchmarking and Design Space Exploration in 3D Scene Understanding.**
-
-_International Conference on Parallel Architectures and Compilation Techniques (PACT)_ 2016  **Conference**
-
-
-&#x20;
-
-### 2015
-
-* L. Nardi, B. Bodin, M.Z. Zia, J. Mawer, A. Nisbet, P.H.J. Kelly, A.J. Davison, M. Lujan, M.F.P. O'Boyle, G. Riley, N. Topham, S. Furber
-
-**SLAMBench: A performance and accuracy benchmarking methodology for SLAM.**
-
-_International Conference on Robotics and Automation (ICRA)_ 2015  **Conference**
-
-
-&#x20;
-
-* M.Z. Zia, M. Stark, K. Schindler.
-
-**Towards Scene Understanding with Detailed 3D Object Representations.**
-
-_International Journal of Computer Vision (IJCV)_ 2015  **Journal**
-
-
-&#x20;
-
-### 2014
-
-* M.Z. Zia, M. Stark, K. Schindler.
-
-**Are Cars Just 3D Boxes? - Jointly Estimating the 3D Shape of Multiple Objects.**
-
-_IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2014  **Conference**
-
-
-&#x20;
-
-* M.Z. Zia.
-
-**High-Resolution 3D Layout from a Single View.**
-
-_PhD Thesis, Swiss Federal Institute of Technology (ETH), Zurich._ 2014
-
-_Committee: Konrad Schindler, Tinne Tuytelaars, Markus Rothacher._
-
-
-&#x20;
-
-### 2013
-
-* M.Z. Zia, M. Stark, K. Schindler.
-
-**Explicit Occlusion Modeling for 3D Object Class Representation.**
-
-_IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2013  **Conference**
-
-
-&#x20;
-
-* M.Z. Zia, M. Stark, B. Schiele, K. Schindler.
-
-**Detailed 3D Representations for Object Modeling and Recognition.**
-
-_IEEE Transaction on Pattern Analysis and Machine Intelligence (TPAMI)_ 2013  **Journal**
-
-
-&#x20;
-
-### 2011
-
-* M.Z. Zia, M. Stark, B. Schiele,K. Schindler.
-
-**Revisiting 3D geometric models for accurate object shape and pose.**
-
-_IEEE Workshop on 3D Representation and Recognition (3dRR/ICCV WS)_ 2011  **Conference**
-
-_Best Paper Award from Microsoft Research._
-
-
-&#x20;
-
-### 2009
-
-* U. Klank, M.Z. Zia, M. Beetz.
-
-**3D Model Selection from an Internet Database for Robotic Vision.**
-
-_International Conference on Robotics and Automation (ICRA)_ 2009 **Conference**
-
-
-&#x20;
-
-* M.Z. Zia, U. Klank, M. Beetz.
-
-**Acquisition of Dense 3D Model Database for Robotic Vision.**
-
-_International Conference on Advanced Robotics (ICAR)_ 2009 **Conference**
-
-
-&#x20;
-
-* M.Z. Zia.
-
-**Inside-Out Activity Analysis using 3D Hand, Object, and Scene Tracking.**
-
-_MS Thesis, Munich University of Technology (TUM)._ 2009
-
-_Advisor: Michael Beetz._
-<br />
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Publications</title>
+
+<style>
+/* =====================
+   COLOR SYSTEM
+===================== */
+:root {
+  --accent: #2bbec3; /* teal / greenish sky blue */
+  --accent-soft: rgba(43, 190, 195, 0.15);
+  --text-light: #111;
+  --text-dark: #eaeaea;
+  --bg-light: #ffffff;
+  --bg-dark: #0f1115;
+  --card-light: #f9f9f9;
+  --card-dark: #161a22;
+  --border-light: #dddddd;
+  --border-dark: #2a2f3a;
+}
+
+/* Auto Dark / Light */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  .pub-card {
+    background: var(--card-dark);
+    border-color: var(--border-dark);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: var(--bg-light);
+    color: var(--text-light);
+  }
+  .pub-card {
+    background: var(--card-light);
+    border-color: var(--border-light);
+  }
+}
+
+/* =====================
+   BASE STYLES
+===================== */
+body {
+  font-family: Inter, Arial, sans-serif;
+  margin: 0;
+  padding: 24px;
+  line-height: 1.55;
+}
+
+.publications {
+  max-width: 900px;
+  margin: auto;
+}
+
+.year {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 36px 0 12px;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.pub-card {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 15.5px;
+}
+
+.pub-authors {
+  font-size: 14px;
+  opacity: 0.9;
+  margin: 4px 0;
+}
+
+.pub-venue {
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+/* =====================
+   TAGS (Conference / Journal)
+===================== */
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.pub-actions {
+  margin-top: 10px;
+}
+
+.pub-actions a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 6px 12px;
+  margin-right: 6px;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid var(--accent);
+  transition: all 0.2s ease;
+}
+
+.pub-actions a:hover {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+/* Dark mode button contrast fix */
+@media (prefers-color-scheme: dark) {
+  .pub-actions a {
+    background: #ffffff;
+    color: #000000;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="publications">
+
+  <!-- =====================
+       2020
+  ===================== -->
+  <div class="year">2020</div>
+
+  <div class="pub-card">
+    <div class="pub-title">
+      Towards Anomaly Detection in Dashcam Videos.
+    </div>
+    <div class="pub-authors">
+      S. Haresh, S. Kumar, <strong>M.Z. Zia</strong>, Q.H. Tran
+    </div>
+    <div class="pub-venue">
+      31st IEEE Intelligent Vehicles Symposium 2020
+      <span class="tag">Conference</span>
+    </div>
+    <div class="pub-actions">
+      <a href="#">Download</a>
+      <a href="#">Abstract</a>
+      <a href="#">BibTeX</a>
+    </div>
+  </div>
+
+  <!-- =====================
+       2019
+  ===================== -->
+  <div class="year">2019</div>
+
+  <div class="pub-card">
+    <div class="pub-title">
+      Domain-Specific Priors and Meta Learning for Low-shot First-Person Action Recognition.
+    </div>
+    <div class="pub-authors">
+      H. Coskun, <strong>M.Z. Zia</strong>, B. Tekin, F. Bogo, N. Navab, F. Tombari, H. Sawhney
+    </div>
+    <div class="pub-venue">
+      arXiv 2019
+      <span class="tag">Technical Report</span>
+    </div>
+    <div class="pub-actions">
+      <a href="#">Download</a>
+      <a href="#">Abstract</a>
+      <a href="#">BibTeX</a>
+    </div>
+  </div>
+
+  <!-- =====================
+       2018
+  ===================== -->
+  <div class="year">2018</div>
+
+  <div class="pub-card">
+    <div class="pub-title">
+      Hierarchical Metric Learning and Matching for 2D and 3D Geometric Correspondences.
+    </div>
+    <div class="pub-authors">
+      M.F. Salem, Q.H. Tran, <strong>M.Z. Zia</strong>, P. Vernaza, M. Chandraker
+    </div>
+    <div class="pub-venue">
+      European Conference on Computer Vision (ECCV)
+      <span class="tag">Conference</span>
+    </div>
+    <div class="pub-actions">
+      <a href="#">Download</a>
+      <a href="#">Abstract</a>
+      <a href="#">BibTeX</a>
+    </div>
+  </div>
+
+  <div class="pub-card">
+    <div class="pub-title">
+      Deep Supervision with Intermediate Concepts.
+    </div>
+    <div class="pub-authors">
+      C. Li, <strong>M.Z. Zia</strong>, X. Yu, G. Hager, M. Chandraker
+    </div>
+    <div class="pub-venue">
+      IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+      <span class="tag">Journal</span>
+    </div>
+    <div class="pub-actions">
+      <a href="#">Download</a>
+      <a href="#">Abstract</a>
+      <a href="#">BibTeX</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+/* JS is optional here.
+   Keeping minimal for embedded compatibility.
+   You can later extend this for filters, toggles, etc. */
+</script>
+
+</body>
+</html>
+
+
+
+```
+
+​
