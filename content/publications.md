@@ -94,8 +94,27 @@ _International Conference on Parallel Architectures and Compilation Techniques (
 
 **SLAMBench: A performance and accuracy benchmarking methodology for SLAM.**
 
-_International Conference on Robotics and Automation (ICRA)_ 2015  **Conference**
-&#x20;
+_International Conference on Robotics and Automation (ICRA)_ 2015  **Conference**&#x20;
+
+```html
+<a href="https://arxiv.org/pdf/2004.05261"
+   target="_blank"
+   style="
+     display: inline-block;
+     padding: 8px 16px;
+     background-color: #2bbec3;
+     color: #ffffff;
+     text-decoration: none;
+     font-size: 14px;
+     font-weight: 600;
+     border-radius: 6px;
+     border: none;
+     cursor: pointer;
+   ">
+  Download
+</a>
+
+```
 
 ​
 
