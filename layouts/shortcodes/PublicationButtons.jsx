@@ -32,10 +32,13 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
   // Parse downloads - can be array of {label, url} objects
   const downloadLinks = downloads || [];
 
+  // Check if any dropdown is open
+  const anyDropdownOpen = showDownloads || showAbstract || showBibtex;
+
   return (
     <div className="publication-buttons my-6">
       {/* Buttons Row */}
-      <div className="flex flex-wrap gap-2 mb-2">
+      <div className={`flex flex-wrap gap-2 ${!anyDropdownOpen ? 'mb-[70px]' : 'mb-2'}`}>
         {/* Download Button */}
         {downloadLinks.length > 0 && (
           <button
@@ -165,7 +168,7 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
 
       {/* Downloads Dropdown */}
       {showDownloads && downloadLinks.length > 0 && (
-        <div className="mt-3 p-4 bg-[#e0f7f8] dark:bg-[#1a4a4c] border-l-4 border-[#2bbec3] rounded-r-md">
+        <div className="mt-3 p-4 mb-[70px] bg-[#e0f7f8] dark:bg-[#1a4a4c] border-l-4 border-[#2bbec3] rounded-r-md">
           <h4 className="text-sm font-bold text-[#2bbec3] dark:text-[#5dd3d7] mb-3">
             Downloads
           </h4>
@@ -200,7 +203,7 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
 
       {/* Abstract Dropdown */}
       {showAbstract && !hideAbstract && (
-        <div className="mt-3 p-4 bg-[#e0f7f8] dark:bg-[#1a4a4c] border-l-4 border-[#2bbec3] rounded-r-md">
+        <div className="mt-3 p-4 mb-[70px] bg-[#e0f7f8] dark:bg-[#1a4a4c] border-l-4 border-[#2bbec3] rounded-r-md">
           <h4 className="text-sm font-bold text-[#2bbec3] dark:text-[#5dd3d7] mb-2">
             Abstract
           </h4>
@@ -212,7 +215,7 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
 
       {/* BibTeX Dropdown */}
       {showBibtex && !hideBibtex && (
-        <div className="mt-3 p-4 bg-gray-700 dark:bg-gray-800 border-l-4 border-[#2bbec3] rounded-r-md">
+        <div className="mt-3 p-4 mb-[70px] bg-gray-700 dark:bg-gray-800 border-l-4 border-[#2bbec3] rounded-r-md">
           <h4 className="text-sm font-bold text-[#5dd3d7] mb-2">
             BibTeX
           </h4>

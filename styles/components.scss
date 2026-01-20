@@ -49,12 +49,31 @@
   @apply prose-table:rounded;
   @apply prose-strong:text-dark prose-strong:dark:text-darkmode-light;
   @apply prose-a:text-primary prose-a:no-underline hover:prose-a:underline;
-  @apply prose-li:text-text prose-li:dark:text-darkmode-light;
+  @apply prose-li:text-text prose-li:dark:text-darkmode-light prose-li:pl-0;
   @apply prose-table:overflow-hidden prose-table:border prose-table:border-border prose-table:dark:border-darkmode-border;
   @apply prose-thead:border-border prose-thead:bg-theme-light prose-th:py-4 prose-th:px-4 prose-th:text-dark prose-thead:dark:border-darkmode-border prose-thead:dark:bg-theme-dark prose-th:dark:text-darkmode-light;
   @apply prose-tr:border-border prose-tr:dark:border-darkmode-border;
   @apply prose-td:px-3 prose-td:py-4 prose-td:dark:text-darkmode-light;
-  @apply prose-li:marker:dark:text-darkmode-light;
+  
+  // Remove list bullets for publications
+  ul {
+    @apply list-none pl-0;
+    
+    li {
+      @apply pl-0;
+      
+      // Reduce spacing between lines within each publication
+      p, strong, em {
+        margin-top: 0.1rem !important;
+        margin-bottom: 0.1rem !important;
+      }
+      
+      &::before {
+        content: none !important;
+        display: none !important;
+      }
+    }
+  }
 
   img + em {
     @apply -mt-4 block text-center text-gray-500;
@@ -222,43 +241,44 @@ footer .socials {
   color-scheme: none;
 }
 
-// Publication styles
+// Publication styles - Override prose defaults
 .content {
   // Publication list styling - remove bullets, align left, add spacing
   ul {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 0;
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
     
-    & > li {
-      margin-bottom: 3rem;
-      padding-left: 0;
+    li {
+      margin-bottom: 70px !important;
+      padding-left: 0 !important;
+      
+      // Reduce spacing between lines within each publication
+      p, strong, em {
+        margin-top: 0.15rem !important;
+        margin-bottom: 0.15rem !important;
+        line-height: 1.4 !important;
+      }
       
       &:first-child {
         margin-top: 0;
       }
       
       &:last-child {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem !important;
       }
       
       // Remove default bullet marker
-      &::marker {
-        content: none;
+      &::before {
+        content: none !important;
+        display: none !important;
+        background-color: transparent !important;
       }
       
-      // Align nested content
-      & > p, & > strong, & > em {
-        display: block;
+      &::marker {
+        content: none !important;
+        display: none !important;
       }
-    }
-  }
-
-  // Publication type badges
-  strong:is(:last-child) {
-    &:has(+ .publication-buttons), 
-    &:empty {
-      display: inline;
     }
   }
 }
@@ -282,7 +302,7 @@ footer .socials {
 
 // Publication buttons container - align with text
 .publication-buttons {
-  margin-left: 0;
+  margin-left: 0 !important;
   margin-top: 0.75rem;
   margin-bottom: 0;
 }
