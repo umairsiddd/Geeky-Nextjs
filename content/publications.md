@@ -123,6 +123,7 @@ _IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2014  **Conf
   **High-Resolution 3D Layout from a Single View.**
 
 _PhD Thesis, Swiss Federal Institute of Technology (ETH), Zurich._ 2014
+
 _Committee: Konrad Schindler, Tinne Tuytelaars, Markus Rothacher._
 &#x20;
 
