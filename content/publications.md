@@ -13,7 +13,6 @@ industry_experience:
 **Towards Anomaly Detection in Dashcam Videos.**
 
 _31st IEEE Intelligent Vehicles Symposium_ 2020  **Conference**
-&#x20;
 
 ​
 
