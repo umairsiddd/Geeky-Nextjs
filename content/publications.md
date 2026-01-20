@@ -2,7 +2,9 @@
 industry_experience:
   - ''
 ---
-### Publications&#xA;&#xA;2020
+# Publications
+
+### 2020
 
 * S. Haresh, S. Kumar, M.Z. Zia, Q.H. Tran.
   **Towards Anomaly Detection in Dashcam Videos.&#xA;**_31st IEEE Intelligent Vehicles Symposium_ 2020  **Conference**
