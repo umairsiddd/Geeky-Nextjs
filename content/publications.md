@@ -14,12 +14,12 @@ _31st IEEE Intelligent Vehicles Symposium_ 2020  **Conference**
 
 <PublicationButtons 
   downloadUrl="https://arxiv.org/pdf/2004.05261" 
-  abstract="We address the problem of detecting anomalies in dashcam videos. Given the rarity of anomalous events, we formulate the problem as a one-class classification task." 
-  bibtex={`@inproceedings{haresh2020anomaly,
-  title={Towards Anomaly Detection in Dashcam Videos},
-  author={Haresh, S. and Kumar, S. and Zia, M.Z. and Tran, Q.H.},
-  booktitle={IEEE Intelligent Vehicles Symposium},
-  year={2020}
+  abstract="Inexpensive sensing and computation, as well as insurance innovations, have made smart dashboard cameras ubiquitous. Increasingly, simple model-driven computer vision algorithms focused on lane departures or safe following distances are finding their way into these devices. Unfortunately, the long-tailed distribution of road hazards means that these hand-crafted pipelines are inadequate for driver safety systems. We propose to apply data-driven anomaly detection ideas from deep learning to dashcam videos, which hold the promise of bridging this gap. Unfortunately, there exists almost no literature applying anomaly understanding to moving cameras, and correspondingly there is also a lack of relevant datasets. To counter this issue, we present a large and diverse dataset of truck dashcam videos, namely RetroTrucks, that includes normal and anomalous driving scenes. We apply:(i) one-class classification loss and (ii) reconstruction-based loss, for anomaly detection on RetroTrucks as well as on existing static-camera datasets. We introduce formulations for modeling object interactions in this context as priors. Our experiments indicate that our dataset is indeed more challenging than standard anomaly detection datasets, and previous anomaly detection methods do not perform well here out-of-the-box. In addition, we share insights into the behavior of these two important families of anomaly detection approaches on dashcam data." 
+  bibtex={`@inproceedings{haresh20iv,
+ author = {S. Haresh and S. Kumar and M.Z. Zia and Q.H. Tran},
+ title = {Towards Anomaly Detection in Dashcam Videos},
+ booktitle = {31st IEEE Intelligent Vehicles Symposium (IV)},
+ year = {2020}
 }`} 
 />
 
@@ -32,13 +32,13 @@ _31st IEEE Intelligent Vehicles Symposium_ 2020  **Conference**
 _arXiv_ 2019  **Technical Report**
 
 <PublicationButtons 
-  downloadUrl="" 
-  abstract="Add abstract text here..." 
-  bibtex={`@article{coskun2019domain,
-  title={Domain-Specific Priors and Meta Learning for Low-shot First-Person Action Recognition},
-  author={Coskun, H. and Zia, M.Z. and Tekin, B. and Bogo, F. and Navab, N. and Tombari, F. and Sawhney, H.},
-  journal={arXiv},
-  year={2019}
+  downloadUrl="https://arxiv.org/pdf/1907.09382" 
+  abstract="The lack of large-scale real datasets with annotations makes transfer learning a necessity for video activity understanding. Within this scope, we aim at developing an effective method for low-shot transfer learning for first-person action classification. We leverage independently trained local visual cues to learn representations that can be transferred from a source domain providing primitive action labels to a target domain with only a handful of examples. Such visual cues include object-object interactions, hand grasps and motion within regions that are a function of handlocations. We suggest a framework based on meta-learning to appropriately extract the distinctive and domain invariant components of the deployed visual cues, so to be able to transfer action classification models across public datasets captured with different scene configurations. We thoroughly evaluate our methodology and report promising results over state-of-the-art action classification approaches for both inter-class and inter-dataset transfer." 
+  bibtex={`@inproceedings{coskun19arxiv,
+ author = {H. Coskun and M.Z. Zia and B. Tekin and F. Bogo and N. Navab and F. Tombari and H. Sawhney},
+ title = {Domain-Specific Priors and Meta Learning for Low-shot First-Person Action Recognition},
+ booktitle = {arXiv:1907.09382},
+ year = {2019}
 }`} 
 />
 
@@ -51,13 +51,13 @@ _arXiv_ 2019  **Technical Report**
 _European Conference on Computer Vision (ECCV)_ 2018 **Conference**
 
 <PublicationButtons 
-  downloadUrl="" 
-  abstract="Add abstract text here..." 
-  bibtex={`@inproceedings{salem2018hierarchical,
-  title={Hierarchical Metric Learning and Matching for 2D and 3D Geometric Correspondences},
-  author={Salem, M.F. and Tran, Q.H. and Zia, M.Z. and Vernaza, P. and Chandraker, M.},
-  booktitle={ECCV},
-  year={2018}
+  downloadUrl="https://arxiv.org/pdf/1803.07231" 
+  abstract="Interest point descriptors have fueled progress on almost every problem in computer vision. Recent advances in deep neural networks have enabled task-specific learned descriptors that outperform hand-crafted descriptors on many problems. We demonstrate that commonly used metric learning approaches do not optimally leverage the feature hierarchies learned in a Convolutional Neural Network (CNN), especially when applied to the task of geometric feature matching. While a metric loss applied to the deepest layer of a CNN, is often expected to yield ideal features irrespective of the task, in fact the growing receptive field as well as striding effects cause shallower features to be better at high precision matching tasks. We leverage this insight together with explicit supervision at multiple levels of the feature hierarchy for better regularization, to learn more effective descriptors in the context of geometric matching tasks. Further, we propose to use activation maps at different layers of a CNN, as an effective and principled replacement for the multi-resolution image pyramids often used for matching tasks. We propose concrete CNN architectures employing these ideas, and evaluate them on multiple datasets for 2D and 3D geometric matching as well as optical flow, demonstrating state-of-the-art results and generalization across datasets." 
+  bibtex={`@inproceedings{salem18arxiv,
+ author = {M.F. Salem and Q.H. Tran and M.Z. Zia and P. Vernaza and M. Chandraker},
+ title = {Hierarchical Metric Learning and Matching for 2D and 3D Geometric Correspondences},
+ booktitle = {ECCV},
+ year = {2018}
 }`} 
 />
 
@@ -68,13 +68,13 @@ _European Conference on Computer Vision (ECCV)_ 2018 **Conference**
 _IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)_ 2018  **Journal**
 
 <PublicationButtons 
-  downloadUrl="" 
-  abstract="Add abstract text here..." 
-  bibtex={`@article{li2018deep,
-  title={Deep Supervision with Intermediate Concepts},
-  author={Li, C. and Zia, M.Z. and Yu, X. and Hager, G. and Chandraker, M.},
-  journal={IEEE TPAMI},
-  year={2018}
+  downloadUrl="https://arxiv.org/pdf/1801.03399" 
+  abstract="Recent data-driven approaches to scene interpretation predominantly pose inference as an end-to-end black-box mapping, commonly performed by a Convolutional Neural Network (CNN). However, decades of work on perceptual organization in both human and machine vision suggests that there are often intermediate representations that are intrinsic to an inference task, and which provide essential structure to improve generalization. In this work, we explore an approach for injecting prior domain structure into neural network training by supervising hidden layers of a CNN with intermediate concepts that normally are not observed in practice. We formulate a probabilistic framework which formalizes these notions and predicts improved generalization via this deep supervision method. One advantage of this approach is that we are able to train only from synthetic CAD renderings of cluttered scenes, where concept values can be extracted, but apply the results to real images. Our implementation achieves the state-of-the-art performance of 2D/3D keypoint localization and image classification on real image benchmarks, including KITTI, PASCAL VOC, PASCAL3D+, IKEA, and CIFAR100. We provide additional evidence that our approach outperforms alternative forms of supervision, such as multi-task networks" 
+  bibtex={`@inproceedings{li2018tpami,
+ author = {C. Li and Q.H. Tran and M.Z. Zia and G. Hager and M. Chandraker},
+ title = {Deep Supervision with Intermediate Concepts.},
+ booktitle = {TPAMI},
+ year = {2018}
 }`} 
 />
 
