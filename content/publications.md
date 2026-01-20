@@ -1,28 +1,32 @@
 ---
 industry_experience:
   - ''
-draft: true
 ---
 ### Publications&#xA;&#xA;2020
 
-* S. Haresh, S. Kumar, M.Z. Zia, Q.H. Tran.Towards Anomaly Detection in Dashcam Videos._31st IEEE Intelligent Vehicles Symposium_ 2020**Conference**
+* S. Haresh, S. Kumar, M.Z. Zia, Q.H. Tran.
+  **Towards Anomaly Detection in Dashcam Videos.&#xA;**_31st IEEE Intelligent Vehicles Symposium_ 2020  **Conference**
   &#x20;
 
 ### 2019
 
-* H. Coskun, M.Z. Zia, B. Tekin, F. Bogo, N. Navab, F. Tombari, H. Sawhney.Domain-Specific Priors and Meta Learning for Low-shot First-Person Action Recognition._arXiv_ 2019**Technical Report**
+* H. Coskun, M.Z. Zia, B. Tekin, F. Bogo, N. Navab, F. Tombari, H. Sawhney.
+  **Domain-Specific Priors and Meta Learning for Low-shot First-Person Action Recognition.&#xA;**_arXiv_ 2019  **Technical Report**
   &#x20;
 
 ### 2018
 
-* M.F. Salem, Q.H. Tran, M.Z. Zia, P. Vernaza, M. Chandraker.Hierarchical Metric Learning and Matching for 2D and 3D Geometric Correspondences._European Conference on Computer Vision (ECCV)_ 2018**Conference**
+* M.F. Salem, Q.H. Tran, M.Z. Zia, P. Vernaza, M. Chandraker.
+  **Hierarchical Metric Learning and Matching for 2D and 3D Geometric Correspondences.&#xA;**_European Conference on Computer Vision (ECCV)_ 2018  **Conference**
   &#x20;
-* C. Li, M.Z. Zia, X. Yu, G. Hager, M. Chandraker.Deep Supervision with Intermediate Concepts._IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)_ 2018**Journal**
+* C. Li, M.Z. Zia, X. Yu, G. Hager, M. Chandraker.
+  **Deep Supervision with Intermediate Concepts.&#xA;**_IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)_ 2018  **Journal**
   &#x20;
 
 ### 2017
 
-* C. Li, M.Z. Zia, X. Yu, G. Hager, M. Chandraker.Deep Supervision with Shape Concepts for Occlusion-Aware 3D Object Parsing._IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2017**Conference**
+* C. Li, M.Z. Zia, X. Yu, G. Hager, M. Chandraker.
+  **Deep Supervision with Shape Concepts for Occlusion-Aware 3D Object Parsing.&#xA;**_IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2017  **Conference**
   &#x20;
 
 ### 2016
