@@ -2,21 +2,14 @@
 industry_experience:
   - ''
 ---
-# &#x20;Publications
+&#x20;Publications
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<title>Publications</title>
 
+
+```
 <style>
-/* =====================
-   COLOR SYSTEM
-===================== */
 :root {
-  --accent: #2bbec3; /* teal / greenish sky blue */
+  --accent: #2bbec3;
   --accent-soft: rgba(43, 190, 195, 0.15);
   --text-light: #111;
   --text-dark: #eaeaea;
@@ -28,42 +21,11 @@ industry_experience:
   --border-dark: #2a2f3a;
 }
 
-/* Auto Dark / Light */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: var(--bg-dark);
-    color: var(--text-dark);
-  }
-  .pub-card {
-    background: var(--card-dark);
-    border-color: var(--border-dark);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background: var(--bg-light);
-    color: var(--text-light);
-  }
-  .pub-card {
-    background: var(--card-light);
-    border-color: var(--border-light);
-  }
-}
-
-/* =====================
-   BASE STYLES
-===================== */
-body {
-  font-family: Inter, Arial, sans-serif;
-  margin: 0;
-  padding: 24px;
-  line-height: 1.55;
-}
-
 .publications {
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
+  font-family: Inter, Arial, sans-serif;
+  line-height: 1.55;
 }
 
 .year {
@@ -76,10 +38,11 @@ body {
 }
 
 .pub-card {
-  border: 1px solid;
+  border: 1px solid var(--border-light);
   border-radius: 10px;
   padding: 16px 18px;
   margin-bottom: 14px;
+  background: var(--card-light);
 }
 
 .pub-title {
@@ -95,12 +58,8 @@ body {
 
 .pub-venue {
   font-size: 14px;
-  margin-top: 2px;
 }
 
-/* =====================
-   TAGS (Conference / Journal)
-===================== */
 .tag {
   display: inline-block;
   padding: 2px 8px;
@@ -111,12 +70,8 @@ body {
   border: 1px solid var(--accent);
   background: var(--accent-soft);
   margin-left: 6px;
-  vertical-align: middle;
 }
 
-/* =====================
-   BUTTONS
-===================== */
 .pub-actions {
   margin-top: 10px;
 }
@@ -139,23 +94,17 @@ body {
   color: #ffffff;
 }
 
-/* Dark mode button contrast fix */
+/* Dark mode support */
 @media (prefers-color-scheme: dark) {
-  .pub-actions a {
-    background: #ffffff;
-    color: #000000;
+  .pub-card {
+    background: var(--card-dark);
+    border-color: var(--border-dark);
   }
 }
 </style>
-</head>
-
-<body>
 
 <div class="publications">
 
-  <!-- =====================
-       2020
-  ===================== -->
   <div class="year">2020</div>
 
   <div class="pub-card">
@@ -176,9 +125,6 @@ body {
     </div>
   </div>
 
-  <!-- =====================
-       2019
-  ===================== -->
   <div class="year">2019</div>
 
   <div class="pub-card">
@@ -199,59 +145,11 @@ body {
     </div>
   </div>
 
-  <!-- =====================
-       2018
-  ===================== -->
-  <div class="year">2018</div>
-
-  <div class="pub-card">
-    <div class="pub-title">
-      Hierarchical Metric Learning and Matching for 2D and 3D Geometric Correspondences.
-    </div>
-    <div class="pub-authors">
-      M.F. Salem, Q.H. Tran, <strong>M.Z. Zia</strong>, P. Vernaza, M. Chandraker
-    </div>
-    <div class="pub-venue">
-      European Conference on Computer Vision (ECCV)
-      <span class="tag">Conference</span>
-    </div>
-    <div class="pub-actions">
-      <a href="#">Download</a>
-      <a href="#">Abstract</a>
-      <a href="#">BibTeX</a>
-    </div>
-  </div>
-
-  <div class="pub-card">
-    <div class="pub-title">
-      Deep Supervision with Intermediate Concepts.
-    </div>
-    <div class="pub-authors">
-      C. Li, <strong>M.Z. Zia</strong>, X. Yu, G. Hager, M. Chandraker
-    </div>
-    <div class="pub-venue">
-      IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
-      <span class="tag">Journal</span>
-    </div>
-    <div class="pub-actions">
-      <a href="#">Download</a>
-      <a href="#">Abstract</a>
-      <a href="#">BibTeX</a>
-    </div>
-  </div>
-
 </div>
 
 <script>
-/* JS is optional here.
-   Keeping minimal for embedded compatibility.
-   You can later extend this for filters, toggles, etc. */
+/* Minimal JS kept for future extension if needed */
 </script>
-
-</body>
-</html>
-
-
 
 ```
 
