@@ -4,7 +4,7 @@ industry_experience:
 ---
 # &#x20;Publications
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
