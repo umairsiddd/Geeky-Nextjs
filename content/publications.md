@@ -120,7 +120,8 @@ _IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2014  **Conf
 ​
 
 * M.Z. Zia.
-  **High-Resolution 3D Layout from a Single View.**
+
+**High-Resolution 3D Layout from a Single View.**
 
 _PhD Thesis, Swiss Federal Institute of Technology (ETH), Zurich._ 2014
 
