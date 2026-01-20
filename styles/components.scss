@@ -224,13 +224,33 @@ footer .socials {
 
 // Publication styles
 .content {
-  // Publication list item styling
-  ul > li {
-    margin-bottom: 0.5rem;
+  // Publication list styling - remove bullets, align left, add spacing
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
     
-    // Align nested content with bullet point
-    & > p, & > strong, & > em {
-      display: block;
+    & > li {
+      margin-bottom: 3rem;
+      padding-left: 0;
+      
+      &:first-child {
+        margin-top: 0;
+      }
+      
+      &:last-child {
+        margin-bottom: 1rem;
+      }
+      
+      // Remove default bullet marker
+      &::marker {
+        content: none;
+      }
+      
+      // Align nested content
+      & > p, & > strong, & > em {
+        display: block;
+      }
     }
   }
 
@@ -260,9 +280,9 @@ footer .socials {
   }
 }
 
-// Publication buttons container
+// Publication buttons container - align with text
 .publication-buttons {
-  margin-left: 1.25rem;
+  margin-left: 0;
   margin-top: 0.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }

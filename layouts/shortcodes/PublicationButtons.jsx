@@ -33,7 +33,7 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
   const downloadLinks = downloads || [];
 
   return (
-    <div className="publication-buttons my-6 ml-5">
+    <div className="publication-buttons my-6">
       {/* Buttons Row */}
       <div className="flex flex-wrap gap-2 mb-2">
         {/* Download Button */}
@@ -212,11 +212,11 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
 
       {/* BibTeX Dropdown */}
       {showBibtex && !hideBibtex && (
-        <div className="mt-3 p-4 bg-gray-100 dark:bg-gray-800 border-l-4 border-[#2bbec3] rounded-r-md">
-          <h4 className="text-sm font-bold text-[#2bbec3] dark:text-[#5dd3d7] mb-2">
+        <div className="mt-3 p-4 bg-gray-700 dark:bg-gray-800 border-l-4 border-[#2bbec3] rounded-r-md">
+          <h4 className="text-sm font-bold text-[#5dd3d7] mb-2">
             BibTeX
           </h4>
-          <pre className="text-xs text-gray-800 dark:text-gray-300 font-mono overflow-x-auto whitespace-pre-wrap">
+          <pre className="text-xs text-white font-mono overflow-x-auto whitespace-pre-wrap">
             {bibtex || "BibTeX citation not available."}
           </pre>
         </div>
