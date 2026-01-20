@@ -8,34 +8,42 @@ industry_experience:
 
 * S. Haresh, S. Kumar, M.Z. Zia, Q.H. Tran.
 
-**Towards Anomaly Detection in Dashcam Videos.**
+&#x20;      **Towards Anomaly Detection in Dashcam Videos.**
 
-_31st IEEE Intelligent Vehicles Symposium_ 2020  **Conference**
+&#x20;     _31st IEEE Intelligent Vehicles Symposium_ 2020  **Conference**
+
+
 &#x20;
 
 ### 2019
 
 * H. Coskun, M.Z. Zia, B. Tekin, F. Bogo, N. Navab, F. Tombari, H. Sawhney.
 
-**Domain-Specific Priors and Meta Learning for Low-shot First-Person Action Recognition.**
+&#x20;     **Domain-Specific Priors and Meta Learning for Low-shot First-Person Action Recognition.**
 
-_arXiv_ 2019  **Technical Report**
+&#x20;    _arXiv_ 2019  **Technical Report**
+
+
 &#x20;
 
 ### 2018
 
 * M.F. Salem, Q.H. Tran, M.Z. Zia, P. Vernaza, M. Chandraker.
 
-**Hierarchical Metric Learning and Matching for 2D and 3D Geometric Correspondences.**
+&#x20;      **Hierarchical Metric Learning and Matching for 2D and 3D Geometric Correspondences.**
 
-_European Conference on Computer Vision (ECCV)_ 2018  **Conference**
+&#x20;     _European Conference on Computer Vision (ECCV)_ 2018  **Conference**
+
+
 &#x20;
 
 * C. Li, M.Z. Zia, X. Yu, G. Hager, M. Chandraker.
 
-**Deep Supervision with Intermediate Concepts.**
+&#x20;      **Deep Supervision with Intermediate Concepts.**
 
-_IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)_ 2018  **Journal**
+&#x20;     _EEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)_ 2018  **Journal**
+
+
 &#x20;
 
 ### 2017
@@ -45,6 +53,8 @@ _IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)_ 2018  *
 **Deep Supervision with Shape Concepts for Occlusion-Aware 3D Object Parsing.**
 
 _IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2017  **Conference**
+
+
 &#x20;
 
 ### 2016
@@ -54,6 +64,8 @@ _IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2017  **Conf
 **Monocular Reconstruction of Vehicles: Combining SLAM with Shape Priors.**
 
 _International Conference on Robotics and Automation (ICRA)_ 2016  **Conference**
+
+
 &#x20;
 
 * M.Z. Zia, L. Nardi, A. Jack, E. Vespa, Bruno Bodin, P.H.J. Kelly, A.J. Davison.
@@ -61,6 +73,8 @@ _International Conference on Robotics and Automation (ICRA)_ 2016  **Conference*
 **Comparative Design Space Exploration of Dense and Semi-Dense SLAM.**
 
 _International Conference on Robotics and Automation (ICRA)_ 2016  **Conference**
+
+
 &#x20;
 
 * B. Bodin, L. Nardi, M.Z. Zia, H. Wagstaff, G.S. Shenoy, M. Emani, J. Mawer, C. Kotselidis, A. Nisbet, M. Lujan, B. Franke, P.H.J. Kelly, M. O'Boyle.
@@ -68,6 +82,8 @@ _International Conference on Robotics and Automation (ICRA)_ 2016  **Conference*
 **Integrating Algorithmic Parameters into Benchmarking and Design Space Exploration in 3D Scene Understanding.**
 
 _International Conference on Parallel Architectures and Compilation Techniques (PACT)_ 2016  **Conference**
+
+
 &#x20;
 
 ### 2015
@@ -77,6 +93,8 @@ _International Conference on Parallel Architectures and Compilation Techniques (
 **SLAMBench: A performance and accuracy benchmarking methodology for SLAM.**
 
 _International Conference on Robotics and Automation (ICRA)_ 2015  **Conference**
+
+
 &#x20;
 
 * M.Z. Zia, M. Stark, K. Schindler.
@@ -84,6 +102,8 @@ _International Conference on Robotics and Automation (ICRA)_ 2015  **Conference*
 **Towards Scene Understanding with Detailed 3D Object Representations.**
 
 _International Journal of Computer Vision (IJCV)_ 2015  **Journal**
+
+
 &#x20;
 
 ### 2014
@@ -93,6 +113,8 @@ _International Journal of Computer Vision (IJCV)_ 2015  **Journal**
 **Are Cars Just 3D Boxes? - Jointly Estimating the 3D Shape of Multiple Objects.**
 
 _IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2014  **Conference**
+
+
 &#x20;
 
 * M.Z. Zia.
@@ -102,6 +124,8 @@ _IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2014  **Conf
 _PhD Thesis, Swiss Federal Institute of Technology (ETH), Zurich._ 2014
 
 _Committee: Konrad Schindler, Tinne Tuytelaars, Markus Rothacher._
+
+
 &#x20;
 
 ### 2013
@@ -111,6 +135,8 @@ _Committee: Konrad Schindler, Tinne Tuytelaars, Markus Rothacher._
 **Explicit Occlusion Modeling for 3D Object Class Representation.**
 
 _IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2013  **Conference**
+
+
 &#x20;
 
 * M.Z. Zia, M. Stark, B. Schiele, K. Schindler.
@@ -118,6 +144,8 @@ _IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2013  **Conf
 **Detailed 3D Representations for Object Modeling and Recognition.**
 
 _IEEE Transaction on Pattern Analysis and Machine Intelligence (TPAMI)_ 2013  **Journal**
+
+
 &#x20;
 
 ### 2011
@@ -129,6 +157,8 @@ _IEEE Transaction on Pattern Analysis and Machine Intelligence (TPAMI)_ 2013  **
 _IEEE Workshop on 3D Representation and Recognition (3dRR/ICCV WS)_ 2011  **Conference**
 
 _Best Paper Award from Microsoft Research._
+
+
 &#x20;
 
 ### 2009
@@ -138,6 +168,8 @@ _Best Paper Award from Microsoft Research._
 **3D Model Selection from an Internet Database for Robotic Vision.**
 
 _International Conference on Robotics and Automation (ICRA)_ 2009 **Conference**
+
+
 &#x20;
 
 * M.Z. Zia, U. Klank, M. Beetz.
@@ -145,6 +177,8 @@ _International Conference on Robotics and Automation (ICRA)_ 2009 **Conference**
 **Acquisition of Dense 3D Model Database for Robotic Vision.**
 
 _International Conference on Advanced Robotics (ICAR)_ 2009 **Conference**
+
+
 &#x20;
 
 * M.Z. Zia.
