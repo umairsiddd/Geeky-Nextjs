@@ -2,7 +2,7 @@
   "main": [
     {
       "name": "About",
-      "url": "/home"
+      "url": "/"
     },
     {
       "name": "Publications",
