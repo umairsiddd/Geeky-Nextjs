@@ -2,7 +2,7 @@
 industry_experience:
   - ''
 ---
-# Publications
+\# Publications
 
 ```
 <!DOCTYPE html>
