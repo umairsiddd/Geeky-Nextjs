@@ -4,6 +4,207 @@ industry_experience:
 ---
 # Publications
 
+### 2026
+
+* Fawad J. Fateh, Umer Ahmed, Hamza Khan, M. Zeeshan Zia, Quoc-Huy Tran
+
+**Video LLMs for Temporal Reasoning in Long Videos.**
+
+_arXiv Preprint_ 2026 <span class="pub-badge technical-report">Technical Report</span>
+
+<PublicationButtons 
+  downloads={[
+    {label: "Paper (PDF)", url: "https://arxiv.org/abs/2412.02930"}
+  ]}
+  abstract="We introduce TemporalVLM, a video large language model designed for temporal reasoning and fine-grained understanding in long videos. The model incorporates a time-aware clip encoder that divides long videos into short-term clips and jointly encodes frames with timestamps to capture time-sensitive local features. These features are then aggregated using a bidirectional long short-term memory (BiLSTM) module to model long-range temporal dependencies and global context. To facilitate evaluation, we present IndustryASM, a large-scale dataset of industry assembly processes with action labels and timestamps annotated by industrial engineers. Extensive experiments demonstrate that TemporalVLM outperforms prior video LLMs across multiple temporal reasoning tasks, including dense video captioning, temporal video grounding, video highlight detection, and temporal action segmentation. To the best of our knowledge, this work is the first to integrate LSTMs into video large language models." 
+  bibtex={`@inproceedings{fateh26temporalvlm,
+ author = {Fawad J. Fateh and Umer Ahmed and Hamza Khan and M. Zeeshan Zia and Quoc-Huy Tran},
+ title = {Video LLMs for Temporal Reasoning in Long Videos},
+ booktitle = {arXiv Preprint},
+ year = {2026}
+}`}
+  video="https://youtu.be/lEUluMdNHcc"
+/>
+
+### 2025
+
+* Syed Ahmed Mahmood, Ali Shah Ali, Umer Ahmed, Fawad Javed Fateh, M. Zeeshan Zia, Quoc-Huy Tran
+
+**Procedure Learning via Regularized Gromov-Wasserstein Optimal Transport.**
+
+_arXiv Preprint_ 2025 <span class="pub-badge technical-report">Technical Report</span>
+
+<PublicationButtons 
+  downloads={[
+    {label: "Paper (PDF)", url: "https://arxiv.org/abs/2507.15540"}
+  ]}
+  abstract="This paper studies self-supervised procedure learning, which aims to discover key steps and their ordering from a collection of unlabeled instructional videos. Prior approaches typically rely on frame-to-frame video alignment, but their performance degrades in the presence of order variations, background or redundant frames, and repeated actions. To address these challenges, the proposed method introduces a self-supervised framework based on a fused Gromov-Wasserstein optimal transport formulation with a structural prior for temporal alignment. However, optimizing temporal alignment alone can lead to degenerate solutions where frame embeddings collapse into a single cluster. To prevent this, the framework integrates a contrastive regularization that encourages embedding diversity across frames. Extensive experiments on egocentric and third-person benchmarks demonstrate that the proposed regularized Gromov-Wasserstein optimal transport approach outperforms prior methods, including OPEL, while using a unified loss formulation that avoids balancing multiple competing objectives." 
+  bibtex={`@inproceedings{mahmood25procedure,
+ author = {Syed Ahmed Mahmood and Ali Shah Ali and Umer Ahmed and Fawad Javed Fateh and M. Zeeshan Zia and Quoc-Huy Tran},
+ title = {Procedure Learning via Regularized Gromov-Wasserstein Optimal Transport},
+ booktitle = {arXiv Preprint},
+ year = {2025}
+}`}
+  video="https://youtu.be/UuTeflDyF-g"
+/>
+
+* Ali Shah Ali, Syed Ahmed Mahmood, Mubin Saeed, Andrey Konin, M. Zeeshan Zia, Quoc-Huy Tran
+
+**Joint Self-Supervised Video Alignment and Action Segmentation.**
+
+_arXiv Preprint_ 2025 <span class="pub-badge technical-report">Technical Report</span>
+
+<PublicationButtons 
+  downloads={[
+    {label: "Paper (PDF)", url: "https://arxiv.org/abs/2503.16832"},
+    {label: "Code (VAOT)", url: "https://github.com/trquhuytin/VAOT-ICCV25"},
+    {label: "Code (VASOT)", url: "https://github.com/trquhuytin/VASOT-ICCV25"}
+  ]}
+  abstract="This paper introduces a unified self-supervised framework for jointly performing video alignment and action segmentation using optimal transport. The proposed approach formulates self-supervised video alignment through a fused Gromov–Wasserstein optimal transport model with structural priors, enabling efficient GPU-based training and rapid convergence. Building upon this, the method is extended into a unified optimal transport formulation that simultaneously addresses frame-to-frame video alignment and frame-to-action segmentation within a single model. The joint approach reduces both training time and memory requirements compared to training separate models for each task. Extensive experiments across multiple video alignment and action segmentation benchmarks demonstrate state-of-the-art performance in video alignment and superior results in action segmentation. To the best of our knowledge, this is the first work to unify self-supervised video alignment and action segmentation within a single learning framework." 
+  bibtex={`@inproceedings{ali25joint,
+ author = {Ali Shah Ali and Syed Ahmed Mahmood and Mubin Saeed and Andrey Konin and M. Zeeshan Zia and Quoc-Huy Tran},
+ title = {Joint Self-Supervised Video Alignment and Action Segmentation},
+ booktitle = {arXiv Preprint},
+ year = {2025}
+}`}
+  video="https://youtu.be/dGT6UvGZQwI?si=VsvslcYMFLvmycFM"
+/>
+
+* Quoc-Huy Tran, Muhammad Ahmed, Murad Popattia, M. Hassan Ahmed, Andrey Konin, M. Zeeshan Zia
+
+**Learning by Aligning 2D Skeleton Sequences and Multi-Modality Fusion.**
+
+_arXiv Preprint_ 2025 <span class="pub-badge technical-report">Technical Report</span>
+
+<PublicationButtons 
+  downloads={[
+    {label: "Paper (PDF)", url: "https://arxiv.org/pdf/2305.19480.pdf"},
+    {label: "GitHub Code", url: "https://github.com/trquhuytin/LA2DS-ECCV24"}
+  ]}
+  abstract="This paper presents a self-supervised temporal video alignment framework for fine-grained human activity understanding that relies on 2D skeleton heatmaps instead of 3D skeleton coordinates. Unlike prior methods such as CASA, which operate on 3D skeletons and perform self-attention only in the temporal domain, the proposed approach converts 2D skeletons into heatmaps and employs a video transformer to perform self-attention in both spatial and temporal domains. Simple yet effective heatmap augmentation strategies are introduced to enable self-supervised learning. Despite lacking 3D information, the proposed method achieves higher accuracy and improved robustness to noisy and missing keypoints. Extensive evaluations on Penn Action, IKEA ASM, and H2O datasets demonstrate superior performance across multiple fine-grained activity understanding tasks. Furthermore, fusing 2D skeleton heatmaps with RGB videos establishes state-of-the-art results across all metrics and datasets." 
+  bibtex={`@inproceedings{tran25la2ds,
+ author = {Quoc-Huy Tran and Muhammad Ahmed and Murad Popattia and M. Hassan Ahmed and Andrey Konin and M. Zeeshan Zia},
+ title = {Learning by Aligning 2D Skeleton Sequences and Multi-Modality Fusion},
+ booktitle = {arXiv Preprint},
+ year = {2025}
+}`}
+  video="https://youtu.be/k0ysYs6Yl6M"
+/>
+
+* Quoc-Huy Tran, Ahmed Mehmood, Muhammad Ahmed, Muhammad Naufil, Anas Zafar, Andrey Konin, M. Zeeshan Zia
+
+**Permutation-Aware Activity Segmentation via Unsupervised Frame-to-Segment Alignment.**
+
+_arXiv Preprint_ 2025 <span class="pub-badge technical-report">Technical Report</span>
+
+<PublicationButtons 
+  downloads={[
+    {label: "Paper (PDF)", url: "https://arxiv.org/pdf/2305.19478.pdf"},
+    {label: "GitHub Code", url: "https://github.com/trquhuytin/UFSA-WACV24"},
+    {label: "Data Splits for Generalization Experiment", url: "https://drive.google.com/drive/folders/1CaYww3LELVy8u8UTdHdQTDjnvkaVy5kn?usp=sharing"}
+  ]}
+  abstract="This paper presents an unsupervised transformer-based framework for temporal activity segmentation that exploits both frame-level and segment-level cues. Unlike prior approaches that rely solely on frame-level information, the proposed method integrates a frame-level prediction module, a segment-level prediction module, and a frame-to-segment alignment module to produce permutation-aware segmentation results. Frame-level predictions are obtained using a transformer encoder trained with temporal optimal transport, while segment-level predictions are generated using a transformer decoder to estimate video transcripts. A frame-to-segment alignment module further matches frame-level and segment-level features to handle permutations of actions. To enable fully unsupervised training, the paper introduces simple yet effective pseudo labels inspired by temporal optimal transport. Extensive experiments on four public benchmarks—50 Salads, YouTube Instructions, Breakfast, and Desktop Assembly—demonstrate that the proposed approach achieves comparable or superior performance compared to existing unsupervised activity segmentation methods." 
+  bibtex={`@inproceedings{tran25perm,
+ author = {Quoc-Huy Tran and Ahmed Mehmood and Muhammad Ahmed and Muhammad Naufil and Anas Zafar and Andrey Konin and M. Zeeshan Zia},
+ title = {Permutation-Aware Activity Segmentation via Unsupervised Frame-to-Segment Alignment},
+ booktitle = {arXiv Preprint},
+ year = {2025}
+}`}
+  video="https://youtu.be/ZgvbwD3h-fc"
+/>
+
+### 2024
+
+* Syed Waleed Hyder, Muhammad Usama, Anas Zafar, Muhammad Naufil, Fawad Javed Fateh, Andrey Konin, M. Zeeshan Zia, Quoc-Huy Tran
+
+**Action Segmentation Using 2D Skeleton Heatmaps and Multi-Modality Fusion.**
+
+_arXiv Preprint_ 2024 <span class="pub-badge technical-report">Technical Report</span>
+
+<PublicationButtons 
+  downloads={[
+    {label: "Paper (PDF)", url: "https://arxiv.org/pdf/2309.06462.pdf"},
+    {label: "Labels and Poses for TUM-Kitchen", url: "https://drive.google.com/drive/folders/113H1p6FhvcpmDcsmXR0V2Wnq6Y2UF_MA"},
+    {label: "Poses for Desktop Assembly", url: "https://drive.google.com/drive/folders/1cHrvnrzvPiqHC1S7Jnw8OiryYY0RKMPI"}
+  ]}
+  abstract="This paper presents a 2D skeleton-based action segmentation approach for fine-grained human activity understanding. Unlike prior methods that directly process sequences of 3D skeleton coordinates using Graph Convolutional Networks (GCNs), the proposed method converts 2D skeletons into heatmap sequences and applies Temporal Convolutional Networks (TCNs) to learn spatiotemporal features. Despite not using 3D information, the approach achieves comparable or superior performance and demonstrates greater robustness to missing keypoints. Performance is further improved through multi-modality fusion by jointly leveraging 2D skeleton heatmaps and RGB video inputs. To the best of our knowledge, this is the first work to employ 2D skeleton heatmap representations and the first to explore 2D skeleton and RGB fusion for action segmentation. Extensive experiments on UW-IOM, TUM-Kitchen, and Desktop Assembly datasets validate the effectiveness of the proposed method." 
+  bibtex={`@inproceedings{hyder24actionseg,
+ author = {Syed Waleed Hyder and Muhammad Usama and Anas Zafar and Muhammad Naufil and Fawad Javed Fateh and Andrey Konin and M. Zeeshan Zia and Quoc-Huy Tran},
+ title = {Action Segmentation Using 2D Skeleton Heatmaps and Multi-Modality Fusion},
+ booktitle = {arXiv Preprint},
+ year = {2024}
+}`}
+/>
+
+### 2023
+
+* Sateesh Kumar, Sanjay Haresh, Awais Ahmed, Andrey Konin, M. Zeeshan Zia, Quoc-Huy Tran
+
+**Unsupervised Action Segmentation by Joint Representation Learning and Online Clustering.**
+
+_arXiv Preprint_ 2023 <span class="pub-badge technical-report">Technical Report</span>
+
+<PublicationButtons 
+  downloads={[
+    {label: "Paper (PDF)", url: "https://arxiv.org/abs/2105.13353"},
+    {label: "GitHub Code", url: "https://github.com/trquhuytin/TOT-CVPR22"},
+    {label: "Video Dataset and Labels", url: "https://bit.ly/3JKm0JP"}
+  ]}
+  abstract="We present a novel approach for unsupervised activity segmentation that jointly performs representation learning and online clustering using video frame clustering as a pretext task. Unlike prior works that perform representation learning and clustering sequentially, our method unifies both processes into a single framework, enabling direct optimization for unsupervised activity segmentation. To leverage temporal information in videos, we introduce a temporal optimal transport module that preserves the temporal order of activities while computing pseudo-label cluster assignments. Furthermore, our approach operates in an online manner by processing one mini-batch at a time, significantly reducing memory requirements compared to offline clustering methods. Extensive experiments on public datasets including 50-Salads, YouTube Instructions, and Breakfast, as well as the Desktop Assembly dataset, demonstrate that our approach performs on par with or better than existing methods while being substantially more memory efficient." 
+  bibtex={`@inproceedings{kumar23unsup,
+ author = {Sateesh Kumar and Sanjay Haresh and Awais Ahmed and Andrey Konin and M. Zeeshan Zia and Quoc-Huy Tran},
+ title = {Unsupervised Action Segmentation by Joint Representation Learning and Online Clustering},
+ booktitle = {arXiv Preprint},
+ year = {2023}
+}`}
+  video="https://youtu.be/i4Fh_3nzzUI"
+/>
+
+### 2022
+
+* Hamza Khan, Sanjay Haresh, Awais Ahmed, Shakeeb Siddiqui, Andrey Konin, M. Zeeshan Zia, Quoc-Huy Tran
+
+**Timestamp-Supervised Action Segmentation with Graph Convolutional Networks.**
+
+_arXiv Preprint_ 2022 <span class="pub-badge technical-report">Technical Report</span>
+
+<PublicationButtons 
+  downloads={[
+    {label: "Paper (PDF)", url: "https://arxiv.org/pdf/2206.15031.pdf"}
+  ]}
+  abstract="We introduce a novel approach for temporal activity segmentation under timestamp supervision, where only sparse frame-level annotations are provided for training. Our main contribution is a graph convolutional network that is trained end-to-end to exploit both frame features and connections between neighboring frames in order to generate dense framewise labels from sparse timestamp labels. These generated labels are then used to effectively train the segmentation model. In addition, we propose an alternating learning framework that first initializes and then iteratively refines both the segmentation model and the graph convolutional network. Extensive experiments on four public datasets—50 Salads, GTEA, Breakfast, and Desktop Assembly—demonstrate that the proposed method outperforms the multi-layer perceptron baseline and achieves performance on par with or better than state-of-the-art methods for timestamp-supervised temporal activity segmentation." 
+  bibtex={`@inproceedings{khan22timestamp,
+ author = {Hamza Khan and Sanjay Haresh and Awais Ahmed and Shakeeb Siddiqui and Andrey Konin and M. Zeeshan Zia and Quoc-Huy Tran},
+ title = {Timestamp-Supervised Action Segmentation with Graph Convolutional Networks},
+ booktitle = {arXiv Preprint},
+ year = {2022}
+}`}
+  video="https://youtu.be/cohbnojdLQA"
+/>
+
+### 2021
+
+* Sanjay Haresh, Sateesh Kumar, Huseyin Coskun, Shahram N. Syed, Andrey Konin, M. Zeeshan Zia, Quoc-Huy Tran
+
+**Learning by Aligning Videos in Time.**
+
+_IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)_ 2021 <span class="pub-badge conference">Conference</span>
+
+<PublicationButtons 
+  downloads={[
+    {label: "Paper (PDF)", url: "https://openaccess.thecvf.com/content/CVPR2021/papers/Haresh_Learning_by_Aligning_Videos_in_Time_CVPR_2021_paper.pdf"},
+    {label: "GitHub Code", url: "https://github.com/trquhuytin/LAV-CVPR21"}
+  ]}
+  abstract="We present a self-supervised approach for learning video representations using temporal video alignment as a pretext task, while exploiting both frame-level and video-level information. Our method leverages a novel combination of temporal alignment loss and temporal regularization as supervision signals for training an encoder network. Specifically, the temporal alignment loss based on Soft Dynamic Time Warping (Soft-DTW) minimizes the cost of temporally aligning videos in the embedding space. However, optimizing this objective alone can lead to trivial solutions where all frames collapse into a small region of the embedding space. To address this issue, we introduce a temporal regularization term, termed Contrastive-IDM, which encourages temporally distinct frames to be mapped to different embedding locations. Extensive evaluations on action phase classification, action phase progression, and fine-grained frame retrieval tasks across the Pouring, Penn Action, and IKEA ASM datasets demonstrate that the proposed approach outperforms state-of-the-art self-supervised video representation learning methods. Additionally, our method provides significant performance gains in scenarios with limited labeled data." 
+  bibtex={`@inproceedings{haresh21lav,
+ author = {Sanjay Haresh and Sateesh Kumar and Huseyin Coskun and Shahram N. Syed and Andrey Konin and M. Zeeshan Zia and Quoc-Huy Tran},
+ title = {Learning by Aligning Videos in Time},
+ booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+ year = {2021}
+}`}
+  video="https://youtu.be/nXAo6Nt56HQ"
+/>
+
 ### 2020
 
 * S. Haresh, S. Kumar, M.Z. Zia, Q.H. Tran.

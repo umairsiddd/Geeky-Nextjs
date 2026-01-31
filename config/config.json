@@ -1,13 +1,13 @@
 {
   "site": {
-    "title": "Geeky Nextjs",
+    "title": "Zeeshan Zia",
     "base_url": "/",
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_white": "/images/logo-light.png",
+    "logo": "/images/logos/ZeeshanZia_Light.png",
+    "logo_white": "/images/logos/ZeeshanZia_Dark.png",
     "logo_width": "150",
     "logo_height": "39",
-    "logo_text": "Geeky"
+    "logo_text": "Zeeshan Zia"
   },
   "settings": {
     "theme_switcher": true,

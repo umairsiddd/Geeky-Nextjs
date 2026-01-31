@@ -10,14 +10,7 @@
     },
     {
       "name": "Awards",
-      "url": "/awards",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Categories",
-          "url": "/categories"
-        }
-      ]
+      "url": "/awards"
     },
     {
       "name": "Books",

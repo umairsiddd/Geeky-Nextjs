@@ -15,7 +15,7 @@ import { FaRegCalendar } from "react-icons/fa";
 const { blog_folder, pagination } = config.settings;
 
 // Publication Item Component with dropdown
-const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract, bibtex }) => {
+const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract, bibtex, videoUrl }) => {
   const [showDownload, setShowDownload] = useState(false);
   const [showAbstract, setShowAbstract] = useState(false);
   const [showBibtex, setShowBibtex] = useState(false);
@@ -61,8 +61,8 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
           onClick={handleDownloadClick}
           className={`inline-flex items-center px-4 py-2 text-sm font-semibold rounded-md transition-colors duration-200 ${
             showDownload
-              ? "bg-[#2bbec3] text-white"
-              : "bg-[#2bbec3] text-white hover:bg-[#249fa3]"
+              ? "bg-[#4159A3] text-white"
+              : "bg-[#4159A3] text-white hover:bg-[#354a8a]"
           }`}
         >
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,8 +79,8 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
           onClick={handleAbstractClick}
           className={`inline-flex items-center px-4 py-2 text-sm font-semibold rounded-md transition-colors duration-200 ${
             showAbstract
-              ? "bg-[#5dd3d7] text-white"
-              : "bg-[#e0f7f8] text-[#2bbec3] hover:bg-[#c5f0f2] dark:bg-[#1a4a4c] dark:text-[#5dd3d7] dark:hover:bg-[#2a5a5c]"
+              ? "bg-[#4159A3] text-white"
+              : "bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb]"
           }`}
         >
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -97,8 +97,8 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
           onClick={handleBibtexClick}
           className={`inline-flex items-center px-4 py-2 text-sm font-semibold rounded-md transition-colors duration-200 ${
             showBibtex
-              ? "bg-[#5dd3d7] text-white"
-              : "bg-[#e0f7f8] text-[#2bbec3] hover:bg-[#c5f0f2] dark:bg-[#1a4a4c] dark:text-[#5dd3d7] dark:hover:bg-[#2a5a5c]"
+              ? "bg-[#4159A3] text-white"
+              : "bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb]"
           }`}
         >
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,17 +109,32 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
         </button>
+
+        {/* Video Button */}
+        {videoUrl && (
+          <a
+            href={videoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-4 py-2 text-sm font-semibold rounded-md transition-colors duration-200 bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb] no-underline"
+          >
+            <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            Video
+          </a>
+        )}
       </div>
 
       {/* Download Dropdown */}
       {showDownload && (
-        <div className="mt-3 p-4 mb-[70px] bg-[#e0f7f8] dark:bg-[#1a4a4c] border-l-4 border-[#2bbec3] rounded-r-md">
-          <h4 className="text-sm font-bold text-[#2bbec3] dark:text-[#5dd3d7] mb-3">Downloads</h4>
+        <div className="mt-3 p-4 mb-[70px] bg-[#E8EBF5] dark:bg-[#2a3561] border-l-4 border-[#4159A3] rounded-r-md">
+          <h4 className="text-sm font-bold text-[#4159A3] dark:text-[#E5F4F4] mb-3">Downloads</h4>
           <a
             href={pdfUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#2bbec3] bg-white dark:bg-[#0d2526] border border-[#2bbec3] rounded hover:bg-[#2bbec3] hover:text-white transition-colors duration-200 no-underline"
+            className="inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#4159A3] bg-white dark:bg-[#4159A3] dark:text-white border border-[#4159A3] rounded hover:bg-[#4159A3] hover:text-[#f0f0f0] dark:hover:bg-[#354a8a] dark:hover:text-[#f0f0f0] active:text-[#e8e8e8] transition-colors duration-200 no-underline"
           >
             <svg className="w-3 h-3 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -131,9 +146,9 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
 
       {/* Abstract Dropdown */}
       {showAbstract && (
-        <div className="mt-3 p-4 mb-[70px] bg-[#e0f7f8] dark:bg-[#1a4a4c] border-l-4 border-[#2bbec3] rounded-r-md">
-          <h4 className="text-sm font-bold text-[#2bbec3] dark:text-[#5dd3d7] mb-2">Abstract</h4>
-          <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-wrap">
+        <div className="mt-3 p-4 mb-[70px] bg-[#E8EBF5] dark:bg-[#E8EBF5] border-l-4 border-[#4159A3] rounded-r-md">
+          <h4 className="text-sm font-bold text-[#4159A3] dark:text-[#4159A3] mb-2">Abstract</h4>
+          <p className="text-sm text-black dark:text-black leading-relaxed whitespace-pre-wrap">
             {abstract}
           </p>
         </div>
@@ -141,8 +156,8 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
 
       {/* BibTeX Dropdown */}
       {showBibtex && (
-        <div className="mt-3 p-4 mb-[70px] bg-gray-700 dark:bg-gray-800 border-l-4 border-[#2bbec3] rounded-r-md">
-          <h4 className="text-sm font-bold text-[#5dd3d7] mb-2">BibTeX</h4>
+        <div className="mt-3 p-4 mb-[70px] bg-gray-700 dark:bg-gray-800 border-l-4 border-[#E5F4F4] rounded-r-md">
+          <h4 className="text-sm font-bold text-[#E5F4F4] mb-2">BibTeX</h4>
           <pre className="text-xs text-white font-mono overflow-x-auto whitespace-pre-wrap">
             {bibtex}
           </pre>
@@ -305,42 +320,67 @@ const Home = ({
       {/* Selected Recent Publications Section */}
       <section className="section pt-[100px]">
         <div className="container">
-          <h2 className="section-title mb-[60px]">
+          <h2 className="section-title mb-[60px] leading-[50px] md:leading-normal">
             Selected Recent Publications{" "}
             <Link href="/publications" className="pub-badge conference no-underline hover:opacity-80">
               See All...
             </Link>
           </h2>
           
+          {/* 2026 */}
+          <h3 className="text-2xl font-bold mb-6 text-dark dark:text-darkmode-light">2026</h3>
+          
           <PublicationItem
-            authors="S. Kumar, S. Haresh, A. Ahmed, A. Konin, M.Z. Zia, Q.H. Tran."
-            title="Unsupervised Action Segmentation by Joint Representation Learning and Online Clustering."
-            venue="CVPR"
-            year="2022"
-            badge="Conference"
-            pdfUrl="https://openaccess.thecvf.com/content/CVPR2022/papers/Kumar_Unsupervised_Action_Segmentation_by_Joint_Representation_Learning_and_Online_Clustering_CVPR_2022_paper.pdf"
-            abstract="We present a novel approach for unsupervised activity segmentation which uses video frame clustering as a pretext task and simultaneously performs representation learning and online clustering. This is in contrast with prior works where representation learning and clustering are often performed sequentially. We leverage temporal information in videos by employing temporal optimal transport. In particular, we incorporate a temporal regularization term which preserves the temporal order of the activity into the standard optimal transport module for computing pseudo-label cluster assignments. The temporal optimal transport module enables our approach to learn effective representations for unsupervised activity segmentation. Furthermore, previous methods require storing learned features for the entire dataset before clustering them in an offline manner, whereas our approach processes one mini-batch at a time in an online manner. Extensive evaluations on three public datasets, ie 50-Salads, YouTube Instructions, and Breakfast, and our dataset, ie, Desktop Assembly, show that our approach performs on par with or better than previous methods, despite having significantly less memory constraints."
-            bibtex={`@inproceedings{kumar22cvpr,
- author = {S. Kumar and S. Haresh and A. Ahmed and A. Konin and M.Z. Zia and Q.H. Tran},
- title = {Unsupervised Action Segmentation by Joint Representation Learning and Online Clustering.},
- booktitle = {CVPR},
- year = {2022}
+            authors="Fawad J. Fateh, Umer Ahmed, Hamza Khan, M. Zeeshan Zia, Quoc-Huy Tran"
+            title="Video LLMs for Temporal Reasoning in Long Videos."
+            venue="arXiv Preprint"
+            year="2026"
+            badge="Technical Report"
+            pdfUrl="https://arxiv.org/abs/2412.02930"
+            videoUrl="https://youtu.be/lEUluMdNHcc"
+            abstract="We introduce TemporalVLM, a video large language model designed for temporal reasoning and fine-grained understanding in long videos. The model incorporates a time-aware clip encoder that divides long videos into short-term clips and jointly encodes frames with timestamps to capture time-sensitive local features. These features are then aggregated using a bidirectional long short-term memory (BiLSTM) module to model long-range temporal dependencies and global context. To facilitate evaluation, we present IndustryASM, a large-scale dataset of industry assembly processes with action labels and timestamps annotated by industrial engineers. Extensive experiments demonstrate that TemporalVLM outperforms prior video LLMs across multiple temporal reasoning tasks, including dense video captioning, temporal video grounding, video highlight detection, and temporal action segmentation. To the best of our knowledge, this work is the first to integrate LSTMs into video large language models."
+            bibtex={`@inproceedings{fateh26temporalvlm,
+ author = {Fawad J. Fateh and Umer Ahmed and Hamza Khan and M. Zeeshan Zia and Quoc-Huy Tran},
+ title = {Video LLMs for Temporal Reasoning in Long Videos},
+ booktitle = {arXiv Preprint},
+ year = {2026}
+}`}
+          />
+
+          {/* 2025 */}
+          <h3 className="text-2xl font-bold mb-6 mt-10 text-dark dark:text-darkmode-light">2025</h3>
+          
+          <PublicationItem
+            authors="Syed Ahmed Mahmood, Ali Shah Ali, Umer Ahmed, Fawad Javed Fateh, M. Zeeshan Zia, Quoc-Huy Tran"
+            title="Procedure Learning via Regularized Gromov-Wasserstein Optimal Transport."
+            venue="arXiv Preprint"
+            year="2025"
+            badge="Technical Report"
+            pdfUrl="https://arxiv.org/abs/2507.15540"
+            videoUrl="https://youtu.be/UuTeflDyF-g"
+            abstract="This paper studies self-supervised procedure learning, which aims to discover key steps and their ordering from a collection of unlabeled instructional videos. Prior approaches typically rely on frame-to-frame video alignment, but their performance degrades in the presence of order variations, background or redundant frames, and repeated actions. To address these challenges, the proposed method introduces a self-supervised framework based on a fused Gromov-Wasserstein optimal transport formulation with a structural prior for temporal alignment. However, optimizing temporal alignment alone can lead to degenerate solutions where frame embeddings collapse into a single cluster. To prevent this, the framework integrates a contrastive regularization that encourages embedding diversity across frames. Extensive experiments on egocentric and third-person benchmarks demonstrate that the proposed regularized Gromov-Wasserstein optimal transport approach outperforms prior methods, including OPEL, while using a unified loss formulation that avoids balancing multiple competing objectives."
+            bibtex={`@inproceedings{mahmood25procedure,
+ author = {Syed Ahmed Mahmood and Ali Shah Ali and Umer Ahmed and Fawad Javed Fateh and M. Zeeshan Zia and Quoc-Huy Tran},
+ title = {Procedure Learning via Regularized Gromov-Wasserstein Optimal Transport},
+ booktitle = {arXiv Preprint},
+ year = {2025}
 }`}
           />
           
           <PublicationItem
-            authors="S. Haresh, S. Kumar, H. Coskun, S.N. Syed, A. Konin, M.Z. Zia, Q.H. Tran."
-            title="Learning by Aligning Videos in Time."
-            venue="CVPR"
-            year="2021"
-            badge="Conference"
-            pdfUrl="https://openaccess.thecvf.com/content/CVPR2021/papers/Haresh_Learning_by_Aligning_Videos_in_Time_CVPR_2021_paper.pdf"
-            abstract="We present a self-supervised approach for learning video representations using temporal video alignment as a pretext task, while exploiting both frame-level and video-level information. We leverage a novel combination of temporal alignment loss and temporal regularization terms, which can be used as supervision signals for training an encoder network. Specifically, the temporal alignment loss (ie, Soft-DTW) aims for the minimum cost for temporally aligning videos in the embedding space. However, optimizing solely for this term leads to trivial solutions, particularly, one where all frames get mapped to a small cluster in the embedding space. To overcome this problem, we propose a temporal regularization term (ie, Contrastive-IDM) which encourages different frames to be mapped to different points in the embedding space. Extensive evaluations on various tasks, including action phase classification, action phase progression, and fine-grained frame retrieval, on three datasets, namely Pouring, Penn Action, and IKEA ASM, show superior performance of our approach over state-of-the-art methods for self-supervised representation learning from videos. In addition, our method provides significant performance gain where labeled data is lacking."
-            bibtex={`@inproceedings{haresh21cvpr,
- author = {S. Haresh and S. Kumar and H. Coskun and S.N. Syed and Andrey Konin and M.Z. Zia and Q.H. Tran},
- title = {Learning by Aligning Videos in Time},
- booktitle = {CVPR},
- year = {2021}
+            authors="Ali Shah Ali, Syed Ahmed Mahmood, Mubin Saeed, Andrey Konin, M. Zeeshan Zia, Quoc-Huy Tran"
+            title="Joint Self-Supervised Video Alignment and Action Segmentation."
+            venue="arXiv Preprint"
+            year="2025"
+            badge="Technical Report"
+            pdfUrl="https://arxiv.org/abs/2503.16832"
+            videoUrl="https://youtu.be/dGT6UvGZQwI?si=VsvslcYMFLvmycFM"
+            abstract="This paper introduces a unified self-supervised framework for jointly performing video alignment and action segmentation using optimal transport. The proposed approach formulates self-supervised video alignment through a fused Gromov–Wasserstein optimal transport model with structural priors, enabling efficient GPU-based training and rapid convergence. Building upon this, the method is extended into a unified optimal transport formulation that simultaneously addresses frame-to-frame video alignment and frame-to-action segmentation within a single model. The joint approach reduces both training time and memory requirements compared to training separate models for each task. Extensive experiments across multiple video alignment and action segmentation benchmarks demonstrate state-of-the-art performance in video alignment and superior results in action segmentation. To the best of our knowledge, this is the first work to unify self-supervised video alignment and action segmentation within a single learning framework."
+            bibtex={`@inproceedings{ali25joint,
+ author = {Ali Shah Ali and Syed Ahmed Mahmood and Mubin Saeed and Andrey Konin and M. Zeeshan Zia and Quoc-Huy Tran},
+ title = {Joint Self-Supervised Video Alignment and Action Segmentation},
+ booktitle = {arXiv Preprint},
+ year = {2025}
 }`}
           />
         </div>

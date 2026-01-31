@@ -12,15 +12,18 @@ const App = ({ Component, pageProps }) => {
   const { default_theme } = config.settings;
 
   // import google font css
-  const pf = theme.fonts.font_family.primary;
-  const sf = theme.fonts.font_family.secondary;
+  const pf = theme.fonts.font_family.primary?.replace(/ /g, "+");
+  const sf = theme.fonts.font_family.secondary?.replace(/ /g, "+");
   const [fontcss, setFontcss] = useState();
   useEffect(() => {
     fetch(
       `https://fonts.googleapis.com/css2?family=${pf}${
         sf ? "&family=" + sf : ""
       }&display=swap`
-    ).then((res) => res.text().then((css) => setFontcss(css)));
+    )
+      .then((res) => res.text())
+      .then((css) => setFontcss(css))
+      .catch((err) => console.error("Failed to load fonts:", err));
   }, [pf, sf]);
 
   // google tag manager (gtm)
