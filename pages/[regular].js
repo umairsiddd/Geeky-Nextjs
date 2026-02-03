@@ -1,6 +1,7 @@
 import NotFound from "@layouts/404";
 import About from "@layouts/About";
 import Awards from "@layouts/Awards";
+import Books from "@layouts/Books";
 import Base from "@layouts/Baseof";
 import Contact from "@layouts/Contact";
 import Default from "@layouts/Default";
@@ -27,6 +28,8 @@ const RegularPages = ({ data }) => {
         <About data={data} />
       ) : layout === "awards" ? (
         <Awards data={data} />
+      ) : layout === "books" ? (
+        <Books data={data} />
       ) : layout === "contact" ? (
         <Contact data={data} />
       ) : (

@@ -116,7 +116,12 @@
 
 //section-title
 .section-title {
-  @apply mb-12 underline decoration-[#4159A3] decoration-wavy decoration-2 underline-offset-[.5em];
+  @apply mb-[52px] underline decoration-[#4159A3] decoration-wavy decoration-2 underline-offset-[.5em] text-[45px];
+}
+
+// Publications page title styling
+.content h1:first-of-type {
+  @apply text-[45px] mb-[52px] underline decoration-[#4159A3] decoration-wavy decoration-2 underline-offset-[.5em] font-bold;
 }
 
 //socials

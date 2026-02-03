@@ -128,11 +128,11 @@ const Awards = ({ data }) => {
   return (
     <section className="section mt-16">
       <div className="container">
-        <h1 className="section-title text-4xl lg:text-[55px] mb-28">
+        <h1 className="section-title">
           {title}
         </h1>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-20">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
           {awards.map((award, index) => (
             <AwardCard
               key={index}

@@ -386,12 +386,11 @@ const Home = ({
         </div>
       </section>
 
-      {/* Home main */}
+      {/* Home main - HIDDEN
       <section className="section">
         <div className="container">
           <div className="row items-start">
             <div className="mb-12 lg:mb-0 lg:col-8">
-              {/* Featured posts */}
               {featured_posts.enable && (
                 <div className="section">
                   {markdownify(featured_posts.title, "h2", "section-title")}
@@ -442,7 +441,6 @@ const Home = ({
                 </div>
               )}
 
-              {/* Promotion */}
               {promotion.enable && (
                 <Link href={promotion.link} className="section block pt-0">
                   <ImageFallback
@@ -455,7 +453,6 @@ const Home = ({
                 </Link>
               )}
 
-              {/* Recent Posts */}
               {recent_posts.enable && (
                 <div className="section pt-0">
                   {markdownify(recent_posts.title, "h2", "section-title")}
@@ -476,7 +473,6 @@ const Home = ({
                 currentPage={1}
               />
             </div>
-            {/* sidebar */}
             <Sidebar
               className={"lg:mt-[9.5rem]"}
               posts={posts}
@@ -485,6 +481,7 @@ const Home = ({
           </div>
         </div>
       </section>
+      */}
     </Base>
   );
 };

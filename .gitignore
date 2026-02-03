@@ -39,3 +39,13 @@ yarn-error.log*
 
 # Local Netlify folder
 .netlify
+# Large files - exclude from git (host externally)
+*.zip
+*.pptx
+*.mp4
+/dataset/
+/code_share/
+/pdf_files/
+/public/dataset/
+/public/code_share/
+/public/pdf_files/

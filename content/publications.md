@@ -277,7 +277,7 @@ _IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)_ 2018 <s
 <PublicationButtons 
   downloads={[
     {label: "Paper (PDF)", url: "https://arxiv.org/pdf/1801.03399.pdf"},
-    {label: "KITTI-3D dataset (160MB)", url: "#"},
+    {label: "KITTI-3D dataset (160MB)", url: "/dataset/KITTI3D_cvpr17.zip"},
     {label: "Labeled CAD models (1 GB)", url: "https://www.cs.jhu.edu/~cli53/data/CAD_cvpr17.zip"},
     {label: "Rendered Images (Chair+Sofa, 14 GB)", url: "https://www.cs.jhu.edu/~cli53/data/chair+sofa.tar.gz"},
     {label: "Rendered Images (Cars)", url: "http://www.nec-labs.com/~mas/DISCO/"}
@@ -302,7 +302,7 @@ _IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2017 <span c
 <PublicationButtons 
   downloads={[
     {label: "Paper (PDF)", url: "https://arxiv.org/pdf/1612.02699.pdf"},
-    {label: "KITTI-3D dataset (160MB)", url: "#"},
+    {label: "KITTI-3D dataset (160MB)", url: "/dataset/KITTI3D_cvpr17.zip"},
     {label: "Labeled CAD models (1 GB)", url: "https://www.cs.jhu.edu/~cli53/data/CAD_cvpr17.zip"},
     {label: "Rendered Images (Chair+Sofa, 14 GB)", url: "https://www.cs.jhu.edu/~cli53/data/chair+sofa.tar.gz"},
     {label: "Rendered Images (Cars)", url: "http://www.nec-labs.com/~mas/DISCO/"}
@@ -326,7 +326,7 @@ _International Conference on Robotics and Automation (ICRA)_ 2016 <span class="p
 
 <PublicationButtons 
   downloads={[
-    {label: "Paper (PDF)", url: "#"},
+    {label: "Paper (PDF)", url: "/pdf_files/chayya16icra.pdf"},
     {label: "Project Page and Supplementary Material", url: "http://tinyurl.com/falak-icra16"},
     {label: "Spotlight Talk", url: "https://youtu.be/pJ1BUNNVSsk"}
   ]}
@@ -348,8 +348,8 @@ _International Conference on Robotics and Automation (ICRA)_ 2016 <span class="p
 <PublicationButtons 
   downloads={[
     {label: "Paper (PDF)", url: "https://arxiv.org/pdf/1509.04648v1.pdf"},
-    {label: "Slides (interactive session)", url: "#"},
-    {label: "Slides (Spotlight session)", url: "#"}
+    {label: "Slides (interactive session)", url: "/pdf_files/zia_icra16_interactive.pdf"},
+    {label: "Slides (Spotlight session)", url: "/pdf_files/zia_icra16_spotlight.pdf"}
   ]}
   abstract="SLAM has matured significantly over the past few years, and is beginning to appear in serious commercial products. While new SLAM systems are being proposed at every conference, evaluation is often restricted to qualitative visualizations or accuracy estimation against a ground truth. This is due to the lack of benchmarking methodologies which can holistically and quantitatively evaluate these systems. Further investigation at the level of individual kernels and parameter spaces of SLAM pipelines is non-existent, which is absolutely essential for systems research and integration. We extend the recently introduced SLAMBench framework to allow comparing two state-of-the-art SLAM pipelines, namely KinectFusion and LSD-SLAM, along the metrics of accuracy, energy consumption, and processing frame rate on two different hardware platforms, namely a desktop and an embedded device. We also analyze the pipelines at the level of individual kernels and explore their algorithmic and hardware design spaces for the first time, yielding valuable insights." 
   bibtex={`@inproceedings{zia16icra,
@@ -368,7 +368,7 @@ _International Conference on Parallel Architectures and Compilation Techniques (
 
 <PublicationButtons 
   downloads={[
-    {label: "Paper (PDF)", url: "#"}
+    {label: "Paper (PDF)", url: "/pdf_files/bodin16pact.pdf"}
   ]}
   abstract="System designers typically use well-studied benchmarks to evaluate and improve new architectures and compilers. We design tomorrow's systems based on yesterday's applications. In this paper we investigate an emerging application, 3D scene understanding, likely to be significant in the mobile space in the near future. Until now, this application could only run in real-time on desktop GPUs. In this work, we examine how it can be mapped to power constrained embedded systems. Key to our approach is the idea of incremental co-design exploration, where optimization choices that concern the domain layer are incrementally explored together with low-level compiler and architecture choices. The goal of this exploration is to reduce execution time while minimizing power and meeting our quality of result objective. As the design space is too large to exhaustively evaluate, we use active learning based on a random forest predictor to find good designs. We show that our approach can, for the first time, achieve dense 3D mapping and tracking in the real-time range within a 1W power budget on a popular embedded device. This is a 4.8x execution time improvement and a 2.8x power reduction compared to the state-of-the-art." 
   bibtex={`@inproceedings{bodin16pact,
@@ -411,8 +411,8 @@ _International Journal of Computer Vision (IJCV)_ 2015 <span class="pub-badge jo
 <PublicationButtons 
   downloads={[
     {label: "Paper (PDF)", url: "https://arxiv.org/pdf/1411.5935.pdf"},
-    {label: "Code", url: "#"},
-    {label: "Evaluation Script and Test Set", url: "#"}
+    {label: "Code", url: "/code_share/Zia_CVPR14_Code.zip"},
+    {label: "Evaluation Script and Test Set", url: "/code_share/eval_cvpr14_zia_script.zip"}
   ]}
   abstract="Current approaches to semantic image and scene understanding typically employ rather simple object representations such as 2D or 3D bounding boxes. While such coarse models are robust and allow for reliable object detection, they discard much of the information about objects' 3D shape and pose, and thus do not lend themselves well to higher-level reasoning. Here, we propose to base scene understanding on a high-resolution object representation. An object class - in our case cars - is modeled as a deformable 3D wireframe, which enables fine-grained modeling at the level of individual vertices and faces. We augment that model to explicitly include vertex-level occlusion, and embed all instances in a common coordinate frame, in order to infer and exploit object-object interactions. Specifically, from a single view we jointly estimate the shapes and poses of multiple objects in a common 3D frame. A ground plane in that frame is estimated by consensus among different objects, which significantly stabilizes monocular 3D pose estimation. The fine-grained model, in conjunction with the explicit 3D scene model, further allows one to infer part-level occlusions between the modeled objects, as well as occlusions by other, unmodeled scene elements. To demonstrate the benefits of such detailed object class models in the context of scene understanding we systematically evaluate our approach on the challenging KITTI street scene dataset. The experiments show that the model's ability to utilize image evidence at the level of individual parts improves monocular 3D pose estimation w.r.t. both location and (continuous) viewpoint." 
   bibtex={`@inproceedings{zia15ijcv,
@@ -434,9 +434,9 @@ _IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2014 <span c
 <PublicationButtons 
   downloads={[
     {label: "Paper (PDF)", url: "https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Zia_Are_Cars_Just_2014_CVPR_paper.pdf"},
-    {label: "Poster (PDF)", url: "#"},
-    {label: "Code", url: "#"},
-    {label: "Evaluation Script and Test Set", url: "#"}
+    {label: "Poster (PDF)", url: "/pdf_files/zia_cvpr14_poster.pdf"},
+    {label: "Code", url: "/code_share/Zia_CVPR14_Code.zip"},
+    {label: "Evaluation Script and Test Set", url: "/code_share/eval_cvpr14_zia_script.zip"}
   ]}
   abstract="Current systems for scene understanding typically represent objects as 2D or 3D bounding boxes. While these representations have proven robust in a variety of applications, they provide only coarse approximations to the true 2D and 3D extent of objects. As a result, object-object interactions, such as occlusions or ground-plane contact, can be represented only superficially. In this paper, we approach the problem of scene understanding from the perspective of 3D shape modeling, and design a 3D scene representation that reasons jointly about the 3D shape of multiple objects. This representation allows to express 3D geometry and occlusion on the fine detail level of individual vertices of 3D wireframe models, and makes it possible to treat dependencies between objects, such as occlusion reasoning, in a deterministic way. In our experiments, we demonstrate the benefit of jointly estimating the 3D shape of multiple objects in a scene over working with coarse boxes, on the recently proposed KITTI dataset of realistic street scenes." 
   bibtex={`@inproceedings{zia2014cars,
@@ -458,8 +458,8 @@ _Committee: Konrad Schindler, Tinne Tuytelaars, Markus Rothacher._
 <PublicationButtons 
   downloads={[
     {label: "Abstract (PDF)", url: "https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/83721/eth-8610-01.pdf?sequence=1"},
-    {label: "Full Thesis (PDF)", url: "#"},
-    {label: "Slides (PDF)", url: "#"}
+    {label: "Full Thesis (PDF)", url: "/pdf_files/Thesis.pdf"},
+    {label: "Slides (PDF)", url: "/pdf_files/Zia_PhD_defense.pdf"}
   ]}
   abstract="Scene understanding based on photographic images has been the holy grail of computer vision ever since the field came into existence some 50 years ago. Since computer vision comes from an Artificial Intelligence background, it is no surprise that most early efforts were directed at fine-grained interpretation of the underlying scene from image data. Unfortunately, the attempts proved far ahead of their time and were unsuccessful in tackling real-world noise and clutter, due to unavailability of vital building blocks that came into existence only decades later as well as severely limited computational resources. In this thesis, we consider the problem of detailed 3D scene level reasoning from a single view image in the light of modern developments in vision and adjoining fields. Bottom-up scene understanding relies on object detections, but unfortunately the hypotheses provided by most current object models are in the form of coarse 2D or 3D bounding boxes, which provide very little geometric information - not enough to model fine-grained interactions between object instances. On the other hand, a number of detailed 3D representations of object geometry were proposed in the early days of computer vision, which provided rich description of the modeled objects. At the time, they proved difficult to match robustly to real world images. However over the past decade or so, developments in local image descriptors, discriminative classification, and numerical optimization methods have made it possible to revive such approaches for 3D reasoning and apply them to challenging real-world images. Thus we revisit detailed 3D representations for object classes, and apply them to the task of scene-level reasoning." 
   bibtex={`@phdthesis{thesis,
@@ -481,11 +481,11 @@ _IEEE Conference on Computer Vision and Pattern Recognition (CVPR)_ 2013 <span c
 <PublicationButtons 
   downloads={[
     {label: "Paper (PDF)", url: "https://www.cv-foundation.org/openaccess/content_cvpr_2013/papers/Zia_Explicit_Occlusion_Modeling_2013_CVPR_paper.pdf"},
-    {label: "Supplemental Material (PDF)", url: "https://www.cv-foundation.org/openaccess/content_cvpr_2013/papers/Zia_Explicit_Occlusion_Modeling_2013_CVPR_paper.pdf"},
-    {label: "Poster (PDF)", url: "#"},
-    {label: "Code", url: "#"},
-    {label: "Training Set (1.5 GB)", url: "#"},
-    {label: "Test Set (260 MB)", url: "#"}
+    {label: "Supplemental Material (PDF)", url: "/pdf_files/zia13cvpr_supp.pdf"},
+    {label: "Poster (PDF)", url: "/pdf_files/zia_cvpr13_poster.pdf"},
+    {label: "Code", url: "/code_share/Zia_CVPR13_Code.zip"},
+    {label: "Training Set (1.5 GB)", url: "/dataset/Train_CVPR13_Zia.zip"},
+    {label: "Test Set (260 MB)", url: "/dataset/Testset_CVPR13_Zia.zip"}
   ]}
   abstract="Despite the success of current state-of-the-art object class detectors, severe occlusion remains a major challenge. This is particularly true for more geometrically expressive 3D object class representations. While these representations have attracted renewed interest for precise object pose estimation, the focus has mostly been on rather clean datasets, where occlusion is not an issue. In this paper, we tackle the challenge of modeling occlusion in the context of a 3D geometric object class model that is capable of fine-grained, part-level 3D object reconstruction. Following the intuition that 3D modeling should facilitate occlusion reasoning, we design an explicit representation of likely geometric occlusion patterns. Robustness is achieved by pooling image evidence from of a set of fixed part detectors as well as a non-parametric representation of part configurations in the spirit of poselets. We confirm the potential of our method on cars in a newly collected data set of inner-city street scenes with varying levels of occlusion, and demonstrate superior performance in occlusion estimation and part localization, compared to baselines that are unaware of occlusions." 
   bibtex={`@inproceedings{zia13cvpr,
@@ -504,9 +504,9 @@ _IEEE Transaction on Pattern Analysis and Machine Intelligence (TPAMI)_ 2013 <sp
 
 <PublicationButtons 
   downloads={[
-    {label: "Paper (PDF)", url: "#"},
-    {label: "Annotations", url: "#"},
-    {label: "Poster (PDF)", url: "#"}
+    {label: "Paper (PDF)", url: "/pdf_files/zia13pami.pdf"},
+    {label: "Annotations", url: "/dataset/Zia_PAMI13_Annotations.zip"},
+    {label: "Poster (PDF)", url: "/pdf_files/zia_cvpr13_poster.pdf"}
   ]}
   abstract="Geometric 3D reasoning at the level of objects has received renewed attention recently in the context of visual scene understanding. The level of geometric detail, however, is typically limited to qualitative representations or coarse boxes. This is linked to the fact that today's object class detectors are tuned toward robust 2D matching rather than accurate 3D geometry, encouraged by bounding-box-based benchmarks such as Pascal VOC. In this paper, we revisit ideas from the early days of computer vision, namely, detailed, 3D geometric object class representations for recognition. These representations can recover geometrically far more accurate object hypotheses than just bounding boxes, including continuous estimates of object pose and 3D wireframes with relative 3D positions of object parts. In combination with robust techniques for shape description and inference, we outperform state-of-the-art results in monocular 3D pose estimation. In a series of experiments, we analyze our approach in detail and demonstrate novel applications enabled by such an object class representation, such as fine-grained categorization of cars and bicycles, according to their 3D geometry, and ultrawide baseline matching." 
   bibtex={`@inproceedings{zia13tpami,
@@ -529,9 +529,9 @@ _Best Paper Award from Microsoft Research._
 
 <PublicationButtons 
   downloads={[
-    {label: "Paper (PDF)", url: "#"},
-    {label: "Slides (PDF)", url: "#"},
-    {label: "Annotations", url: "#"}
+    {label: "Paper (PDF)", url: "/pdf_files/zia11iccv.pdf"},
+    {label: "Slides (PDF)", url: "/pdf_files/3dRR-presentation.pdf"},
+    {label: "Annotations", url: "/dataset/Zia_PAMI13_Annotations.zip"}
   ]}
   abstract="Geometric 3D reasoning has received renewed attention recently, in the context of visual scene understanding. The level of geometric detail, however, is typically limited to qualitative or coarse-grained quantitative representations. This is linked to the fact that today's object class detectors are tuned towards robust 2D matching rather than accurate 3D pose estimation, encouraged by 2D bounding box-based benchmarks such as Pascal VOC. In this paper, we therefore revisit ideas from the early days of computer vision, namely, 3D geometric object class representations for recognition. These representations can recover geometrically far more accurate object hypotheses than just 2D bounding boxes, including relative 3D positions of object parts. In combination with recent robust techniques for shape description and inference, our approach outperforms state-of-the-art results in 3D pose estimation, while at the same time improving 2D localization. In a series of experiments, we analyze our approach in detail, and demonstrate novel applications enabled by our geometric object class representation, such as fine-grained categorization of cars according to their 3D geometry and ultra-wide baseline matching." 
   bibtex={`@inproceedings{zia11iccvws,
@@ -552,7 +552,7 @@ _International Conference on Robotics and Automation (ICRA)_ 2009 <span class="p
 
 <PublicationButtons 
   downloads={[
-    {label: "Paper (PDF)", url: "#"}
+    {label: "Paper (PDF)", url: "/pdf_files/zia09icra.pdf"}
   ]}
   abstract="We propose a new method for automatically accessing an internet database of 3D models that are searchable only by their user-annotated labels, for using them for vision and robotic manipulation purposes. Instead of having only a local database containing already seen objects, we want to use shared databases available over the internet. This approach while having the potential to dramatically increase the visual recognition capability of robots, also poses certain problems, like wrong annotation due to the open nature of the database, or overwhelming amounts of data (many 3D models) or the lack of relevant data (no models matching a specified label). To solve those problems we propose the following: First, we present an outlier/inlier classification method for reducing the number of results and discarding invalid 3D models that do not match our query. Second, we utilize an approach from computer graphics, the so called 'morphing', to this application to specialize the models, in order to describe more objects. Third, we search for 3D models using a restricted search space, as obtained from our knowledge of the environment. We show our classification and matching results and finally show how we can recover the correct scaling with the stereo setup of our robot." 
   bibtex={`@inproceedings{klank09icra,
@@ -571,8 +571,8 @@ _International Conference on Advanced Robotics (ICAR)_ 2009 <span class="pub-bad
 
 <PublicationButtons 
   downloads={[
-    {label: "Paper (PDF)", url: "#"},
-    {label: "Slides (PDF)", url: "#"}
+    {label: "Paper (PDF)", url: "/pdf_files/zia09icar.pdf"},
+    {label: "Slides (PDF)", url: "/pdf_files/ICAR09_presentation.pdf"}
   ]}
   abstract="Service Robots in real world environments need to have computer vision capability for detecting a large class of objects. We discuss how freely available 3D model databases can be used to enable robots to know the appearance of a wide variety of objects in human environments with special application to our Assistive Kitchen. However, the open and free nature of such databases pose problems for example the presence of incorrectly annotated 3D models, or objects for which very few models exist online. We have previously proposed techniques to automatically select the useful models from the search result, and utilizing such models to perform simple manipulation tasks. Here, we build upon that work, to describe a technique based on Morphing to form new 3D models if we only have a few models corresponding to a label. However, morphing in computer graphics requires a human operator and is computationally burdensome, due to which we present our own automatic morphing technique. We also present a simple technique to speed the matching process of 3D models against real scenes using Visibility culling. This technique can potentially speed-up the matching process by 2-3 times while using less memory, if we have some prior information model and world pose." 
   bibtex={`@inproceedings{zia09icar,
@@ -593,7 +593,7 @@ _Advisor: Michael Beetz._
 
 <PublicationButtons 
   downloads={[
-    {label: "Full Thesis (PDF)", url: "#"}
+    {label: "Full Thesis (PDF)", url: "/pdf_files/zia09MSthesis.pdf"}
   ]}
   hideAbstract={true}
   hideBibtex={true}
