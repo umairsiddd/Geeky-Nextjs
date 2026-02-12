@@ -37,7 +37,7 @@ const PostSingle = ({
 
   return (
     <Base title={title} description={description}>
-      <section className="section single-blog mt-6">
+      <section className="section single-blog mt-4 sm:mt-6">
         <div className="container">
           <div className="row">
             <div className="lg:col-8">
@@ -49,17 +49,17 @@ const PostSingle = ({
                       height="500"
                       width="1000"
                       alt={title}
-                      className="rounded-lg"
+                      className="rounded-lg w-full h-auto"
                     />
                   )}
-                  <ul className="absolute top-3 left-2 flex flex-wrap items-center">
+                  <ul className="absolute top-2 sm:top-3 left-1 sm:left-2 flex flex-wrap items-center gap-1">
                     {categories.map((tag, index) => (
                       <li
-                        className="mx-2 inline-flex h-7 rounded-[35px] bg-primary px-3 text-white"
+                        className="mx-1 sm:mx-2 inline-flex h-6 sm:h-7 rounded-[35px] bg-primary px-2 sm:px-3 text-xs sm:text-sm text-white"
                         key={"tag-" + index}
                       >
                         <Link
-                          className="capitalize"
+                          className="capitalize flex items-center"
                           href={`/categories/${tag.replace(" ", "-")}`}
                         >
                           {tag}
@@ -69,34 +69,34 @@ const PostSingle = ({
                   </ul>
                 </div>
                 {config.settings.InnerPaginationOptions.enableTop && (
-                  <div className="mt-4">
+                  <div className="mt-3 sm:mt-4">
                     <InnerPagination posts={posts} date={date} />
                   </div>
                 )}
-                {markdownify(title, "h1", "lg:text-[42px] mt-4")}
-                <ul className="flex items-center space-x-4">
+                {markdownify(title, "h1", "text-xl sm:text-2xl md:text-3xl lg:text-[42px] mt-3 sm:mt-4")}
+                <ul className="flex items-center space-x-2 sm:space-x-4 mt-2">
                   <li>
                     <Link
-                      className="inline-flex items-center font-secondary text-xs leading-3"
+                      className="inline-flex items-center font-secondary text-[10px] sm:text-xs leading-3"
                       href="/about"
                     >
-                      <FaUserAlt className="mr-1.5" />
+                      <FaUserAlt className="mr-1 sm:mr-1.5" />
                       {author}
                     </Link>
                   </li>
-                  <li className="inline-flex items-center font-secondary text-xs leading-3">
-                    <FaRegCalendar className="mr-1.5" />
+                  <li className="inline-flex items-center font-secondary text-[10px] sm:text-xs leading-3">
+                    <FaRegCalendar className="mr-1 sm:mr-1.5" />
                     {dateFormat(date)}
                   </li>
                 </ul>
-                <div className="content mb-16">
+                <div className="content mb-8 sm:mb-12 md:mb-16">
                   <MDXRemote {...mdxContent} components={shortcodes} />
                 </div>
                 {config.settings.InnerPaginationOptions.enableBottom && (
                   <InnerPagination posts={posts} date={date} />
                 )}
               </article>
-              <div className="mt-16">
+              <div className="mt-8 sm:mt-12 md:mt-16">
                 {disqus.enable && (
                   <DiscussionEmbed
                     key={theme}
@@ -114,11 +114,11 @@ const PostSingle = ({
         </div>
 
         {/* Related posts */}
-        <div className="container mt-20">
+        <div className="container mt-10 sm:mt-16 md:mt-20">
           <h2 className="section-title">Related Posts</h2>
-          <div className="row mt-16">
+          <div className="row mt-8 sm:mt-12 md:mt-16">
             {relatedPosts.slice(0, 3).map((post, index) => (
-              <div key={"post-" + index} className="mb-12 lg:col-4">
+              <div key={"post-" + index} className="mb-8 sm:mb-12 lg:col-4">
                 <Post post={post} />
               </div>
             ))}

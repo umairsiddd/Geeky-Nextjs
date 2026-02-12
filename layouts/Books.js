@@ -46,11 +46,11 @@ const BookCard = ({ title, author, cover, usePlaceholder }) => {
           />
         )}
       </div>
-      <div className="p-4">
-        <h3 className="text-sm font-bold text-dark dark:text-white mb-1 line-clamp-2 leading-tight">
+      <div className="p-2 sm:p-3 md:p-4">
+        <h3 className="text-xs sm:text-sm font-bold text-dark dark:text-white mb-1 line-clamp-2 leading-tight">
           {title}
         </h3>
-        <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-1">
+        <p className="text-[10px] sm:text-xs text-gray-500 dark:text-gray-400 line-clamp-1">
           {author}
         </p>
       </div>
@@ -551,7 +551,7 @@ const Books = ({ data }) => {
         <h1 className="section-title">
           {title}
         </h1>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4 md:gap-6">
           {books.map((book, index) => (
             <BookCard
               key={index}

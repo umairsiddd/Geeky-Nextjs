@@ -25,7 +25,7 @@ const Sidebar = ({ posts, categories, className }) => {
   return (
     <aside className={`${className} px-0 lg:px-6 lg:col-4`}>
       {about.enable && (
-        <div className="relative rounded border border-border p-6 text-center dark:border-darkmode-border">
+        <div className="relative rounded border border-border p-4 sm:p-6 text-center dark:border-darkmode-border">
           <ImageFallback
             className="-z-[1]"
             src="/images/map.svg"
@@ -33,9 +33,9 @@ const Sidebar = ({ posts, categories, className }) => {
             alt="bg-map"
           />
           <Logo />
-          {markdownify(about.content, "p", "mt-8")}
+          {markdownify(about.content, "p", "mt-4 sm:mt-8 text-sm sm:text-base")}
           <Social
-            className="socials sidebar-socials mt-6 justify-center"
+            className="socials sidebar-socials mt-4 sm:mt-6 justify-center"
             source={social}
           />
         </div>
@@ -43,14 +43,14 @@ const Sidebar = ({ posts, categories, className }) => {
 
       {/* categories widget */}
       {categories.enable && (
-        <div className="mt-6 rounded border border-border p-6 dark:border-darkmode-border">
-          <h4 className="section-title mb-12 text-center">
+        <div className="mt-4 sm:mt-6 rounded border border-border p-4 sm:p-6 dark:border-darkmode-border">
+          <h4 className="section-title mb-6 sm:mb-12 text-center">
             {featured_posts.title}
           </h4>
           <ul>
             {categories.map((category, i) => (
               <li
-                className={`relative mb-2 flex items-center justify-between pl-6 text-[16px] font-bold capitalize text-dark dark:text-darkmode-light ${
+                className={`relative mb-2 flex items-center justify-between pl-6 text-sm sm:text-[16px] font-bold capitalize text-dark dark:text-darkmode-light ${
                   i !== categories.length - 1 &&
                   "border-b border-border  dark:border-darkmode-border"
                 }`}

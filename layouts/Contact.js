@@ -9,9 +9,9 @@ const Contact = ({ data }) => {
   const { title, form_action, phone, mail, location } = frontmatter;
 
   return (
-    <section className="section lg:mt-16">
+    <section className="section mt-8 sm:mt-12 lg:mt-16">
       <div className="container">
-        <div className="row relative pb-16">
+        <div className="row relative pb-8 sm:pb-12 md:pb-16">
           <ImageFallback
             className="-z-[1] object-cover object-top"
             src={"/images/map.svg"}
@@ -23,10 +23,10 @@ const Contact = ({ data }) => {
             {markdownify(
               title,
               "h1",
-              "h1 my-10 lg:my-11 lg:pt-11 text-center lg:text-left lg:text-[64px]"
+              "h1 my-6 sm:my-8 lg:my-11 lg:pt-11 text-center lg:text-left text-[32px] sm:text-[42px] md:text-[55px] lg:text-[64px]"
             )}
           </div>
-          <div className="contact-form-wrapper rounded border border-border p-6 dark:border-darkmode-border lg:col-6">
+          <div className="contact-form-wrapper rounded border border-border p-4 sm:p-6 dark:border-darkmode-border lg:col-6">
             <h2>
               Send Us A
               <span className="ml-1.5 inline-flex items-center text-primary">

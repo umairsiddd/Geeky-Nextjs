@@ -113,9 +113,9 @@ const Header = () => {
             <Social source={socical} className="socials" />
           </div>
           <ThemeSwitcher />
-          {/* Header search */}
+          {/* Header search - hidden */}
           <div
-            className="search-icon"
+            className="search-icon hidden"
             onClick={() => {
               setSearchModal(true);
             }}

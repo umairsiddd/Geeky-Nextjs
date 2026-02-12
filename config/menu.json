@@ -17,13 +17,8 @@
       "url": "/books"
     },
     {
-      "name": "Blogs",
-      "url": "/blogs",
-      "children": []
-    },
-    {
-      "name": "Contact",
-      "url": "/contact"
+      "name": "Media",
+      "url": "/media"
     }
   ],
   "footer": [
@@ -42,6 +37,10 @@
     {
       "name": "Books",
       "url": "/books"
+    },
+    {
+      "name": "Media",
+      "url": "/media"
     }
   ],
   "draft": false

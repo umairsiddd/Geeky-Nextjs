@@ -2,21 +2,21 @@ import { markdownify } from "@lib/utils/textConverter";
 
 const AwardCard = ({ icon, title, description, status }) => {
   return (
-    <div className="mb-6 rounded-lg border border-border p-8 dark:border-darkmode-border bg-white dark:bg-darkmode-theme-dark shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col items-center text-center min-h-[280px]">
-      <div className="w-16 h-16 flex items-center justify-center rounded-full bg-[#E8EBF5] dark:bg-[#2a3561] text-[#4159A3] dark:text-[#E5F4F4] mb-5">
+    <div className="mb-4 sm:mb-6 rounded-lg border border-border p-4 sm:p-6 md:p-8 dark:border-darkmode-border bg-white dark:bg-darkmode-theme-dark shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col items-center text-center min-h-[200px] sm:min-h-[240px] md:min-h-[280px]">
+      <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center rounded-full bg-[#E8EBF5] dark:bg-[#2a3561] text-[#4159A3] dark:text-[#E5F4F4] mb-3 sm:mb-4 md:mb-5">
         {icon}
       </div>
       <div className="flex-1 flex flex-col justify-center">
-        <h3 className="text-lg font-bold text-dark dark:text-white mb-3">
+        <h3 className="text-sm sm:text-base md:text-lg font-bold text-dark dark:text-white mb-2 sm:mb-3">
           {title}
           {status && (
-            <span className="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
+            <span className="ml-1 sm:ml-2 text-xs sm:text-sm font-normal text-gray-500 dark:text-gray-400">
               [{status}]
             </span>
           )}
         </h3>
         {description && (
-          <p className="text-text dark:text-darkmode-light text-sm leading-relaxed">
+          <p className="text-text dark:text-darkmode-light text-xs sm:text-sm leading-relaxed">
             {description}
           </p>
         )}
@@ -126,13 +126,13 @@ const Awards = ({ data }) => {
   ];
 
   return (
-    <section className="section mt-16">
+    <section className="section mt-8 sm:mt-12 md:mt-16">
       <div className="container">
         <h1 className="section-title">
           {title}
         </h1>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
+        <div className="grid gap-4 sm:gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:mt-8 md:mt-12">
           {awards.map((award, index) => (
             <AwardCard
               key={index}
