@@ -5,6 +5,7 @@ import Books from "@layouts/Books";
 import Base from "@layouts/Baseof";
 import Contact from "@layouts/Contact";
 import Default from "@layouts/Default";
+import Media from "@layouts/Media";
 import { getRegularPage, getSinglePage } from "@lib/contentParser";
 
 // for all regular pages
@@ -32,6 +33,8 @@ const RegularPages = ({ data }) => {
         <Books data={data} />
       ) : layout === "contact" ? (
         <Contact data={data} />
+      ) : layout === "media" ? (
+        <Media data={data} />
       ) : (
         <Default data={data} />
       )}

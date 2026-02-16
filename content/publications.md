@@ -1,4 +1,8 @@
 ---
+title: Publications
+meta_title: Zeeshan Zia - Publications
+description: "Browse 50+ peer-reviewed publications by Zeeshan Zia on visual activity understanding, action segmentation, temporal reasoning, 3D scene understanding, and machine learning systems."
+hide_title: true
 industry_experience:
   - ''
 ---

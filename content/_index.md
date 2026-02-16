@@ -3,14 +3,17 @@ banner:
   title: Zeeshan Zia
   title_small: President, Retrocausal
   content: >-
-    I authored more than 20 peer-reviewed publications on visual activity
-    understanding, 3D scene understanding, learning from synthetic data, and
-    machine learning systems, which were cited by every major lab from MIT,
-    Stanford, and CMU, to Apple, Google, and Baidu.
+    I build AI systems that understand real-world activity. At Retrocausal, I focus on visual activity understanding, enabling models to interpret complex human workflows in industrial environments. Our platform is deployed with leading manufacturers and grounded in direct exposure to real operations.<br><br>
+
+
+    My research centers on how neural networks represent structured processes over time, including unsupervised alignment, action segmentation, and temporal reasoning. I have authored 50 peer-reviewed papers and hold 25+ patents in activity understanding and representation learning. My lab is recognized for leading work in unsupervised activity segmentation and alignment.<br><br>
+
+
+    I am broadly interested in how learned representations capture structure in complex systems and how to translate that understanding into scalable, real-world AI products.<br><br>
   image_enable: true
   image: /images/banner-author.png
   button:
-    enable: true
+    enable: false
     label: Know About Me
     link: /about
     rel: ''

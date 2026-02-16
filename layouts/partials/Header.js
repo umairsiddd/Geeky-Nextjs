@@ -16,6 +16,7 @@ const Header = () => {
   // states declaration
   const [searchModal, setSearchModal] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   // Router
   const router = useRouter();
@@ -29,8 +30,17 @@ const Header = () => {
     }
   }, [showMenu]);
 
+  // Handle scroll for sticky header
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${scrolled ? "header-scrolled" : ""}`}>
       <nav className="navbar container px-1 sm:px-8">
         <div className="order-0">
           <Logo />

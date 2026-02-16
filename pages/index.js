@@ -184,7 +184,10 @@ const Home = ({
   const showPosts = pagination;
 
   return (
-    <Base>
+    <Base 
+      title="Zeeshan Zia" 
+      description="Zeeshan Zia - AI researcher and President of Retrocausal. Building AI systems for visual activity understanding in industrial environments. 50+ peer-reviewed papers, 25+ patents."
+    >
       {/* Banner */}
       <section className="section banner relative pb-0">
         <ImageFallback
@@ -198,12 +201,12 @@ const Home = ({
 
         <div className="container">
           <div className="row flex-wrap-reverse items-center justify-center lg:flex-row">
-            <div className={banner.image_enable ? "mt-12 text-center lg:mt-0 lg:text-left lg:col-6" : "mt-12 text-center lg:mt-0 lg:text-left lg:col-12"}>
+            <div className={banner.image_enable ? "mt-12 text-center lg:mt-0 lg:text-left lg:col-7" : "mt-12 text-center lg:mt-0 lg:text-left lg:col-12"}>
               <div className="banner-title">
                 {markdownify(banner.title, "h1")}
                 {markdownify(banner.title_small, "span")}
               </div>
-              {markdownify(banner.content, "p", "mt-4")}
+              {markdownify(banner.content, "p", "mt-4 text-justify")}
               {banner.button.enable && (
                   <Link
                     className="btn btn-primary mt-6"
@@ -215,12 +218,12 @@ const Home = ({
               )}
             </div>
             {banner.image_enable && (
-                <div className="col-9 lg:col-6">
+                <div className="col-9 lg:col-5">
                   <ImageFallback
                     className="mx-auto object-contain"
                     src={banner.image}
-                    width={548}
-                    height={443}
+                    width={450}
+                    height={365}
                     priority={true}
                     alt="Banner Image"
                   />
