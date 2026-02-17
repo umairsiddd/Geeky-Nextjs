@@ -36,21 +36,21 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
   const anyDropdownOpen = showDownloads || showAbstract || showBibtex;
 
   return (
-    <div className="publication-buttons my-6">
+    <div className="publication-buttons my-4 sm:my-6">
       {/* Buttons Row */}
-      <div className={`flex flex-wrap gap-2 ${!anyDropdownOpen ? 'mb-[70px]' : 'mb-2'}`}>
+      <div className={`flex flex-wrap gap-1.5 sm:gap-2 ${!anyDropdownOpen ? 'mb-10 sm:mb-[70px]' : 'mb-2'}`}>
         {/* Download Button */}
         {downloadLinks.length > 0 && (
           <button
             onClick={handleDownloadsClick}
-            className={`inline-flex items-center px-4 py-2 text-sm font-semibold rounded-md transition-colors duration-200 ${
+            className={`inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 ${
               showDownloads
                 ? "bg-[#4159A3] text-white"
                 : "bg-[#4159A3] text-white hover:bg-[#354a8a]"
             }`}
           >
             <svg
-              className="w-4 h-4 mr-2"
+              className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -64,7 +64,7 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
             </svg>
             Download
             <svg
-              className={`w-4 h-4 ml-1 transition-transform duration-200 ${
+              className={`w-3 h-3 sm:w-4 sm:h-4 ml-1 transition-transform duration-200 ${
                 showDownloads ? "rotate-180" : ""
               }`}
               fill="none"
@@ -85,14 +85,14 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
         {!hideAbstract && (
           <button
             onClick={handleAbstractClick}
-            className={`inline-flex items-center px-4 py-2 text-sm font-semibold rounded-md transition-colors duration-200 ${
+            className={`inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 ${
               showAbstract
                 ? "bg-[#4159A3] text-white"
                 : "bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb]"
             }`}
           >
             <svg
-              className="w-4 h-4 mr-2"
+              className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -106,7 +106,7 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
             </svg>
             Abstract
             <svg
-              className={`w-4 h-4 ml-1 transition-transform duration-200 ${
+              className={`w-3 h-3 sm:w-4 sm:h-4 ml-1 transition-transform duration-200 ${
                 showAbstract ? "rotate-180" : ""
               }`}
               fill="none"
@@ -127,14 +127,14 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
         {!hideBibtex && (
           <button
             onClick={handleBibtexClick}
-            className={`inline-flex items-center px-4 py-2 text-sm font-semibold rounded-md transition-colors duration-200 ${
+            className={`inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 ${
               showBibtex
                 ? "bg-[#4159A3] text-white"
                 : "bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb]"
             }`}
           >
             <svg
-              className="w-4 h-4 mr-2"
+              className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -148,7 +148,7 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
             </svg>
             BibTeX
             <svg
-              className={`w-4 h-4 ml-1 transition-transform duration-200 ${
+              className={`w-3 h-3 sm:w-4 sm:h-4 ml-1 transition-transform duration-200 ${
                 showBibtex ? "rotate-180" : ""
               }`}
               fill="none"
@@ -171,10 +171,10 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
             href={video}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-4 py-2 text-sm font-semibold rounded-md transition-colors duration-200 bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb] no-underline"
+            className="inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb] no-underline"
           >
             <svg
-              className="w-4 h-4 mr-2"
+              className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -187,11 +187,11 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
 
       {/* Downloads Dropdown */}
       {showDownloads && downloadLinks.length > 0 && (
-        <div className="mt-3 p-4 mb-[70px] bg-[#E8EBF5] dark:bg-[#2a3561] border-l-4 border-[#4159A3] rounded-r-md">
-          <h4 className="text-sm font-bold text-[#4159A3] dark:text-[#E5F4F4] mb-3">
+        <div className="mt-2 sm:mt-3 p-3 sm:p-4 mb-10 sm:mb-[70px] bg-[#E8EBF5] dark:bg-[#2a3561] border-l-4 border-[#4159A3] rounded-r-md">
+          <h4 className="text-xs sm:text-sm font-bold text-[#4159A3] dark:text-[#E5F4F4] mb-2 sm:mb-3">
             Downloads
           </h4>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2">
             {downloadLinks.map((link, index) => (
               <a
                 key={index}
@@ -222,11 +222,11 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
 
       {/* Abstract Dropdown */}
       {showAbstract && !hideAbstract && (
-        <div className="mt-3 p-4 mb-[70px] bg-[#E8EBF5] dark:bg-[#E8EBF5] border-l-4 border-[#4159A3] rounded-r-md">
-          <h4 className="text-sm font-bold text-[#4159A3] dark:text-[#4159A3] mb-2">
+        <div className="mt-2 sm:mt-3 p-3 sm:p-4 mb-10 sm:mb-[70px] bg-[#E8EBF5] dark:bg-[#E8EBF5] border-l-4 border-[#4159A3] rounded-r-md">
+          <h4 className="text-xs sm:text-sm font-bold text-[#4159A3] dark:text-[#4159A3] mb-2">
             Abstract
           </h4>
-          <p className="text-sm text-black dark:text-black leading-relaxed whitespace-pre-wrap">
+          <p className="text-xs sm:text-sm text-black dark:text-black leading-relaxed whitespace-pre-wrap">
             {abstract || "Abstract not available."}
           </p>
         </div>
@@ -234,11 +234,11 @@ const PublicationButtons = ({ downloads, abstract, bibtex, hideAbstract, hideBib
 
       {/* BibTeX Dropdown */}
       {showBibtex && !hideBibtex && (
-        <div className="mt-3 p-4 mb-[70px] bg-gray-700 dark:bg-gray-800 border-l-4 border-[#E5F4F4] rounded-r-md">
-          <h4 className="text-sm font-bold text-[#E5F4F4] mb-2">
+        <div className="mt-2 sm:mt-3 p-3 sm:p-4 mb-10 sm:mb-[70px] bg-gray-700 dark:bg-gray-800 border-l-4 border-[#E5F4F4] rounded-r-md">
+          <h4 className="text-xs sm:text-sm font-bold text-[#E5F4F4] mb-2">
             BibTeX
           </h4>
-          <pre className="text-xs text-white font-mono overflow-x-auto whitespace-pre-wrap">
+          <pre className="text-[10px] sm:text-xs text-white font-mono overflow-x-auto whitespace-pre-wrap">
             {bibtex || "BibTeX citation not available."}
           </pre>
         </div>
