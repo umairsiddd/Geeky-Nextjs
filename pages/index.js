@@ -45,7 +45,7 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
   };
 
   const anyDropdownOpen = showDownload || showAbstract || showBibtex;
-  
+
   return (
     <div className="mb-6 sm:mb-8 md:mb-[70px]">
       <p className="text-sm sm:text-base text-text dark:text-darkmode-light mb-2 sm:mb-3">{authors}</p>
@@ -53,17 +53,16 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
       <p className="text-sm sm:text-base text-text dark:text-darkmode-light italic mb-2 sm:mb-3">
         {venue} {year} <span className="pub-badge conference ml-1 sm:ml-2">{badge}</span>
       </p>
-      
+
       {/* Buttons Row */}
       <div className={`flex flex-wrap gap-2 ${!anyDropdownOpen ? 'mb-8 sm:mb-12 md:mb-[70px]' : 'mb-2'}`}>
         {/* Download Button */}
         <button
           onClick={handleDownloadClick}
-          className={`inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 ${
-            showDownload
+          className={`inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 ${showDownload
               ? "bg-[#4159A3] text-white"
               : "bg-[#4159A3] text-white hover:bg-[#354a8a]"
-          }`}
+            }`}
         >
           <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -77,11 +76,10 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
         {/* Abstract Button */}
         <button
           onClick={handleAbstractClick}
-          className={`inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 ${
-            showAbstract
+          className={`inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 ${showAbstract
               ? "bg-[#4159A3] text-white"
               : "bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb]"
-          }`}
+            }`}
         >
           <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -95,11 +93,10 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
         {/* BibTeX Button */}
         <button
           onClick={handleBibtexClick}
-          className={`inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 ${
-            showBibtex
+          className={`inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 ${showBibtex
               ? "bg-[#4159A3] text-white"
               : "bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb]"
-          }`}
+            }`}
         >
           <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
@@ -119,7 +116,7 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
             className="inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb] no-underline"
           >
             <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
             </svg>
             Video
           </a>
@@ -184,8 +181,8 @@ const Home = ({
   const showPosts = pagination;
 
   return (
-    <Base 
-      title="Zeeshan Zia" 
+    <Base
+      title="Zeeshan Zia"
       description="Zeeshan Zia - AI researcher and President of Retrocausal. Building AI systems for visual activity understanding in industrial environments. 50+ peer-reviewed papers, 25+ patents."
     >
       {/* Banner */}
@@ -208,26 +205,26 @@ const Home = ({
               </div>
               {markdownify(banner.content, "p", "mt-4 text-justify")}
               {banner.button.enable && (
-                  <Link
-                    className="btn btn-primary mt-6"
-                    href={banner.button.link}
-                    rel={banner.button.rel}
-                  >
-                    {banner.button.label}
-                  </Link>
+                <Link
+                  className="btn btn-primary mt-6"
+                  href={banner.button.link}
+                  rel={banner.button.rel}
+                >
+                  {banner.button.label}
+                </Link>
               )}
             </div>
             {banner.image_enable && (
-                <div className="col-9 lg:col-5">
-                  <ImageFallback
-                    className="mx-auto object-contain"
-                    src={banner.image}
-                    width={450}
-                    height={365}
-                    priority={true}
-                    alt="Banner Image"
-                  />
-                </div>
+              <div className="col-9 lg:col-5">
+                <ImageFallback
+                  className="mx-auto object-contain"
+                  src={banner.image}
+                  width={450}
+                  height={365}
+                  priority={true}
+                  alt="Banner Image"
+                />
+              </div>
             )}
           </div>
         </div>
@@ -243,18 +240,18 @@ const Home = ({
                 <h2 className="section-title mb-8 sm:mb-12 md:mb-[70px]">{experience.industry.title}</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
                   {experience.industry.items.map((item, index) => (
-                    <div key={index} className="text-center">
-                      <h4 className="font-bold text-dark dark:text-white text-sm sm:text-base mb-1">
+                    <div key={index} className="text-left sm:text-center">
+                      <h4 className="font-bold text-dark dark:text-white text-base sm:text-base mb-1">
                         {item.company}
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mb-4 sm:mb-6">
+                      <p className="text-sm sm:text-sm text-gray-500 dark:text-gray-400 mb-4 sm:mb-6">
                         {item.location}
                       </p>
-                      <a 
-                        href={item.url} 
-                        target="_blank" 
+                      <a
+                        href={item.url}
+                        target="_blank"
                         rel="noopener noreferrer"
-                        className="block h-28 sm:h-32 md:h-40 flex items-center justify-center mb-4 sm:mb-6 hover:opacity-80 transition-opacity"
+                        className="block h-28 sm:h-32 md:h-40 flex items-center justify-start sm:justify-center mb-4 sm:mb-6 hover:opacity-80 transition-opacity"
                       >
                         <ImageFallback
                           src={item.logo}
@@ -268,7 +265,7 @@ const Home = ({
                       <p className="text-sm sm:text-base text-primary font-medium">
                         {item.role}
                       </p>
-                      <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 italic">
+                      <p className="text-sm sm:text-sm text-gray-500 dark:text-gray-400 italic">
                         {item.period}
                       </p>
                     </div>
@@ -283,18 +280,18 @@ const Home = ({
                 <h2 className="section-title mb-8 sm:mb-12 md:mb-[70px]">{experience.academia.title}</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
                   {experience.academia.items.map((item, index) => (
-                    <div key={index} className="text-center">
-                      <h4 className="font-bold text-dark dark:text-white text-sm sm:text-base mb-1">
+                    <div key={index} className="text-left sm:text-center">
+                      <h4 className="font-bold text-dark dark:text-white text-base sm:text-base mb-1">
                         {item.degree}
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mb-4 sm:mb-6">
+                      <p className="text-sm sm:text-sm text-gray-500 dark:text-gray-400 mb-4 sm:mb-6">
                         {item.institution}
                       </p>
-                      <a 
-                        href={item.url} 
-                        target="_blank" 
+                      <a
+                        href={item.url}
+                        target="_blank"
                         rel="noopener noreferrer"
-                        className="block h-28 sm:h-32 md:h-40 flex items-center justify-center mb-4 sm:mb-6 hover:opacity-80 transition-opacity"
+                        className="block h-28 sm:h-32 md:h-40 flex items-center justify-start sm:justify-center mb-4 sm:mb-6 hover:opacity-80 transition-opacity"
                       >
                         <ImageFallback
                           src={item.logo}
@@ -305,10 +302,10 @@ const Home = ({
                           style={{ borderRadius: '8px' }}
                         />
                       </a>
-                      <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+                      <p className="text-sm sm:text-sm text-gray-500 dark:text-gray-400">
                         {item.location}
                       </p>
-                      <p className="text-xs sm:text-sm text-primary italic">
+                      <p className="text-sm sm:text-sm text-primary italic">
                         {item.period}
                       </p>
                     </div>
@@ -329,10 +326,10 @@ const Home = ({
               See All...
             </Link>
           </h2>
-          
+
           {/* 2026 */}
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 sm:mb-6 text-dark dark:text-darkmode-light">2026</h3>
-          
+
           <PublicationItem
             authors="Fawad J. Fateh, Umer Ahmed, Hamza Khan, M. Zeeshan Zia, Quoc-Huy Tran"
             title="Video LLMs for Temporal Reasoning in Long Videos."
@@ -352,7 +349,7 @@ const Home = ({
 
           {/* 2025 */}
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 sm:mb-6 mt-6 sm:mt-8 md:mt-10 text-dark dark:text-darkmode-light">2025</h3>
-          
+
           <PublicationItem
             authors="Syed Ahmed Mahmood, Ali Shah Ali, Umer Ahmed, Fawad Javed Fateh, M. Zeeshan Zia, Quoc-Huy Tran"
             title="Procedure Learning via Regularized Gromov-Wasserstein Optimal Transport."
@@ -369,7 +366,7 @@ const Home = ({
  year = {2025}
 }`}
           />
-          
+
           <PublicationItem
             authors="Ali Shah Ali, Syed Ahmed Mahmood, Mubin Saeed, Andrey Konin, M. Zeeshan Zia, Quoc-Huy Tran"
             title="Joint Self-Supervised Video Alignment and Action Segmentation."
