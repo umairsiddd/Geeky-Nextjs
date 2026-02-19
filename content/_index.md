@@ -11,7 +11,7 @@ banner:
 
     I am broadly interested in how learned representations capture structure in complex systems and how to translate that understanding into scalable, real-world AI products.<br><br>
   image_enable: true
-  image: /images/banner-author.png
+  image: /images/ZeeshanZia_HeadShot.png
   button:
     enable: false
     label: Know About Me
@@ -22,30 +22,31 @@ experience:
   industry:
     title: Industry
     items:
-      - company: Microsoft Research
+      - company: Retrocausal
+        location: Redmond, WA
+        logo: /images/RetroLightIcon.png
+        logo_dark: /images/RetroDarkIcon.png
+        url: https://retrocausal.ai/
+        role: CEO and Chief Scientist
+        period: 2019-current
+      - company: Microsoft
         location: Redmond, WA
         logo: /images/logos/microsoft.png
         url: https://www.microsoft.com/en-us/research/
-        role: Senior Scientist (HoloLens)
+        role: Senior Scientist
         period: 2017-2019
       - company: NEC Laboratories America
         location: Cupertino, CA
         logo: /images/logos/nec.png
         url: https://www.nec-labs.com/
-        role: Researcher
+        role: Research Scientist
         period: 2015-2017
       - company: Qualcomm Research
         location: Vienna, Austria
         logo: /images/logos/qualcomm.png
         url: https://www.qualcomm.com/research
-        role: Research Intern
-        period: Summer 2013
-      - company: Siemens Corp. Technologies
-        location: Munich, Germany
-        logo: /images/logos/siemens.png
-        url: https://www.siemens.com/
-        role: Engineering Intern
-        period: Summer 2008
+        role: Visiting Researcher
+        period: 2013
   academia:
     title: Academia
     items:

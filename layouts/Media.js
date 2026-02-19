@@ -40,7 +40,7 @@ const PodcastCard = ({ title, description, date, thumbnail, link, episodeNumber 
   const [imageError, setImageError] = useState(false);
 
   return (
-    <a 
+    <a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
@@ -62,7 +62,7 @@ const PodcastCard = ({ title, description, date, thumbnail, link, episodeNumber 
         <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
             <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#4159A3] ml-0.5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z"/>
+              <path d="M8 5v14l11-7z" />
             </svg>
           </div>
         </div>
@@ -93,6 +93,34 @@ const Media = ({ data }) => {
 
   // Using i0.wp.com CDN URLs for reliable image loading
   const podcasts = [
+    {
+      title: "Manufacturing the Future Episode #49 with Zeeshan Zia, CEO & Co-founder",
+      description: "Zeeshan Zia joined Epicor’s Manufacturing the Future podcast to discuss how AI copilots empower factory workers, cut scrap rates from 30% to 3%, and enable people-centric transformation in manufacturing.",
+      date: "Feb 15, 2025",
+      thumbnail: "https://img.youtube.com/vi/RFmZQaekP4s/hqdefault.jpg",
+      link: "https://www.youtube.com/watch?v=RFmZQaekP4s"
+    },
+    {
+      title: "Humans of AI with Zeeshan Zia (Retrocausal)",
+      description: "Zeeshan Zia, CEO of Retrocausal, discusses applying AI to improve human work, lessons from research, leaving big tech to found a startup, and advice for new scientists.",
+      date: "Oct 27, 2023",
+      thumbnail: "https://vumbnail.com/879874921.jpg",
+      link: "https://vimeo.com/879874921"
+    },
+    {
+      title: "Increase manufacturing processes by 25% with AI, Opcenter and Retrocausual a Siemens Partner",
+      description: "At Siemens Realize Live 2023, Zeeshan Zia discussed Retrocausal’s Siemens PLM integration, enabling one-click AI deployment that boosts efficiency by 25% and cuts scrap by 85%.",
+      date: "June 27, 2023",
+      thumbnail: "https://img.youtube.com/vi/zhP4XoaWKCU/hqdefault.jpg",
+      link: "https://www.youtube.com/watch?v=zhP4XoaWKCU"
+    },
+    {
+      title: "AI Copilots for Manufacturing Assembly Optimization",
+      description: "Zeeshan Zia explains how AI co-pilots give frontline workers real-time guidance to cut errors and scrap by up to 90%, transforming manufacturing productivity and quality.",
+      date: "May 25, 2023",
+      thumbnail: "https://img.youtube.com/vi/oferQtX0zdU/hqdefault.jpg",
+      link: "https://www.youtube.com/watch?v=oferQtX0zdU"
+    },
     {
       title: "S2EP11 – From Factory Floor to AI-Powered Enterprise: Lessons from SAP's Stefan Groendahl",
       description: "From Factory Floor to AI-Powered Enterprise: Lessons from SAP's Stefan Groendahl Duration: 34 mins 08 secs Your Host Zeeshan Zia...",
@@ -282,7 +310,7 @@ const Media = ({ data }) => {
                 description={podcast.description}
                 date={podcast.date}
                 thumbnail={podcast.thumbnail}
-                link={podcastLink}
+                link={podcast.link || podcastLink}
                 episodeNumber={podcast.episodeNumber}
               />
             ))}

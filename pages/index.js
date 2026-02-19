@@ -1,6 +1,7 @@
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
 import ImageFallback from "@layouts/components/ImageFallback";
+import { useTheme } from "next-themes";
 import Pagination from "@layouts/components/Pagination";
 import Post from "@layouts/partials/Post";
 import Sidebar from "@layouts/partials/Sidebar";
@@ -10,7 +11,7 @@ import dateFormat from "@lib/utils/dateFormat";
 import { sortByDate } from "@lib/utils/sortFunctions";
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaRegCalendar } from "react-icons/fa";
 const { blog_folder, pagination } = config.settings;
 
@@ -60,8 +61,8 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
         <button
           onClick={handleDownloadClick}
           className={`inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 ${showDownload
-              ? "bg-[#4159A3] text-white"
-              : "bg-[#4159A3] text-white hover:bg-[#354a8a]"
+            ? "bg-[#4159A3] text-white"
+            : "bg-[#4159A3] text-white hover:bg-[#354a8a]"
             }`}
         >
           <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -77,8 +78,8 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
         <button
           onClick={handleAbstractClick}
           className={`inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 ${showAbstract
-              ? "bg-[#4159A3] text-white"
-              : "bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb]"
+            ? "bg-[#4159A3] text-white"
+            : "bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb]"
             }`}
         >
           <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -94,8 +95,8 @@ const PublicationItem = ({ authors, title, venue, year, badge, pdfUrl, abstract,
         <button
           onClick={handleBibtexClick}
           className={`inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-md transition-colors duration-200 ${showBibtex
-              ? "bg-[#4159A3] text-white"
-              : "bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb]"
+            ? "bg-[#4159A3] text-white"
+            : "bg-[#E5F4F4] text-black hover:bg-[#d0ebeb] dark:bg-[#E5F4F4] dark:text-black dark:hover:bg-[#d0ebeb]"
             }`}
         >
           <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -173,7 +174,10 @@ const Home = ({
   promotion,
   experience,
 }) => {
-  // define state
+  const { theme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
   const sortPostByDate = sortByDate(posts);
   const featuredPosts = sortPostByDate.filter(
     (post) => post.frontmatter.featured
@@ -254,7 +258,11 @@ const Home = ({
                         className="block h-28 sm:h-32 md:h-40 flex items-center justify-start sm:justify-center mb-4 sm:mb-6 hover:opacity-80 transition-opacity"
                       >
                         <ImageFallback
-                          src={item.logo}
+                          src={
+                            mounted && (theme === "dark" || resolvedTheme === "dark") && item.logo_dark
+                              ? item.logo_dark
+                              : item.logo
+                          }
                           alt={item.company}
                           width={180}
                           height={180}

@@ -23,7 +23,6 @@ import {
   IoLogoSoundcloud,
   IoLogoTiktok,
   IoLogoTumblr,
-  IoLogoTwitter,
   IoLogoVimeo,
   IoLogoVk,
   IoLogoWhatsapp,
@@ -31,16 +30,28 @@ import {
   IoMail,
   IoLogoStackoverflow,
 } from "react-icons/io5";
+import { SiGooglescholar } from "react-icons/si";
+
+const XIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
 
 const Social = ({ source, className }) => {
   const {
-    facebook,
+    scholar,
     stackoverflow,
     twitter,
     instagram,
     youtube,
     linkedin,
-    github,
     gitlab,
     discord,
     slack,
@@ -68,15 +79,15 @@ const Social = ({ source, className }) => {
   } = source;
   return (
     <ul className={className}>
-      {facebook && (
+      {scholar && (
         <li className="inline-block">
           <a
-            aria-label="facebook"
-            href={facebook}
+            aria-label="google scholar"
+            href={scholar}
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
-            <IoLogoFacebook />
+            <SiGooglescholar />
           </a>
         </li>
       )}
@@ -95,12 +106,12 @@ const Social = ({ source, className }) => {
       {twitter && (
         <li className="inline-block">
           <a
-            aria-label="twitter"
+            aria-label="twitter x"
             href={twitter}
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
-            <IoLogoTwitter />
+            <XIcon />
           </a>
         </li>
       )}
@@ -140,18 +151,7 @@ const Social = ({ source, className }) => {
           </a>
         </li>
       )}
-      {github && (
-        <li className="inline-block">
-          <a
-            aria-label="github"
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            <IoLogoGithub />
-          </a>
-        </li>
-      )}
+
       {gitlab && (
         <li className="inline-block">
           <a

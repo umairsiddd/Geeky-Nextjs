@@ -1,8 +1,8 @@
 import { markdownify } from "@lib/utils/textConverter";
 
-const AwardCard = ({ icon, title, description, status }) => {
-  return (
-    <div className="mb-4 sm:mb-6 rounded-lg border border-border p-4 sm:p-6 md:p-8 dark:border-darkmode-border bg-white dark:bg-darkmode-theme-dark shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col items-center text-center min-h-[200px] sm:min-h-[240px] md:min-h-[280px]">
+const AwardCard = ({ icon, title, description, status, url }) => {
+  const content = (
+    <>
       <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center rounded-full bg-[#E8EBF5] dark:bg-[#2a3561] text-[#4159A3] dark:text-[#E5F4F4] mb-3 sm:mb-4 md:mb-5">
         {icon}
       </div>
@@ -21,6 +21,27 @@ const AwardCard = ({ icon, title, description, status }) => {
           </p>
         )}
       </div>
+    </>
+  );
+
+  const containerClasses = "mb-4 sm:mb-6 rounded-lg border border-border p-4 sm:p-6 md:p-8 dark:border-darkmode-border bg-white dark:bg-darkmode-theme-dark shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col items-center text-center min-h-[200px] sm:min-h-[240px] md:min-h-[280px]";
+
+  if (url) {
+    return (
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${containerClasses} hover:border-[#4159A3] dark:hover:border-[#E5F4F4] transition-colors cursor-pointer no-underline`}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <div className={containerClasses}>
+      {content}
     </div>
   );
 };
@@ -75,6 +96,48 @@ const Awards = ({ data }) => {
   );
 
   const awards = [
+    {
+      icon: AwardIcon,
+      title: "CAMPS Innovation Award (2025)",
+      description: "Retrocausal won the Center of Advanced Manufacturing Puget Sound (CAMPS) Innovation Award for 2025 while I was CEO.",
+      url: "https://www.linkedin.com/posts/the-center-for-advanced-manufacturing-puget-sound_%F0%9D%90%82%F0%9D%90%80%F0%9D%90%8C%F0%9D%90%8F%F0%9D%90%92-%F0%9D%90%88%F0%9D%90%A7%F0%9D%90%A7%F0%9D%90%A8%F0%9D%90%AF%F0%9D%90%9A%F0%9D%90%AD%F0%9D%90%A2%F0%9D%90%A8%F0%9D%90%A7-%F0%9D%90%80%F0%9D%90%B0%F0%9D%90%9A%F0%9D%90%AB%F0%9D%90%9D-activity-7403111903809761280-lLaJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAABSvdx0BfohRbh3GhQOD7uwjEP2QiSidcHs"
+    },
+    {
+      icon: TrophyIcon,
+      title: "America’s Greatest Startup Workplaces (2025)",
+      description: "Four star rating for Retrocausal’s healthy work-life balance while offering strong benefits and career growth opportunities.",
+      url: "https://rankings.newsweek.com/americas-greatest-startup-workplaces-2025"
+    },
+    {
+      icon: TrophyIcon,
+      title: "CB Insights’ AI 100 (2024)",
+      description: "Retrocausal picked as a top-100 AI startup.",
+      url: "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2024/"
+    },
+    {
+      icon: AwardIcon,
+      title: "CB Insights’ Advanced Manufacturing 50 (2022)",
+      description: "Retrocausal picked as a top-50 Advanced Manufacturing company out of 6000.",
+      url: "https://www.cbinsights.com/research/report/top-advanced-manufacturing-startups-2022/"
+    },
+    {
+      icon: TrophyIcon,
+      title: "Best Startup Award (2021)",
+      description: "Edge AI and Vision Alliance Startup Competition (Judges Award and Audience Award)",
+      url: "https://www.edge-ai-vision.com/2021/05/the-edge-ai-and-vision-alliance-announces-the-2021-vision-tank-start-up-competition-winners-at-the-embedded-vision-summit/"
+    },
+    {
+      icon: TrophyIcon,
+      title: "ISMAR Best Demonstration Award (2020)",
+      description: "RetroActivity: Rapidly Deployable Live Task Guidance Experiences",
+      url: "https://ismar2020.ismar.net/awards/index.html"
+    },
+    {
+      icon: AwardIcon,
+      title: "NASA JPL SBIR grant (2020)",
+      description: "Principal Investigator with Exploratory Medical Capabilities (ExMC) laboratories",
+      url: "https://techport.nasa.gov/projects/102543"
+    },
     {
       icon: FellowshipIcon,
       title: "NTNU Onsager Fellowship in Robotic Vision",
@@ -140,6 +203,7 @@ const Awards = ({ data }) => {
               title={award.title}
               description={award.description}
               status={award.status}
+              url={award.url}
             />
           ))}
         </div>
