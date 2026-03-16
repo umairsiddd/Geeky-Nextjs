@@ -1,7 +1,7 @@
 $host_name = "ftp.zeeshanzia.com"
 $username = "admin@zeeshanzia.com"
 $password = "ZX6Z54A5"
-$local_path = "d:\MY WORK2\Retro_Office_Work\ZZ_Git_GeekyWeb\Geeky-Nextjs\out"
+$local_path = "d:\MY WORK2\Retro_Office_Work\ZZ_Git_GeekyWeb_Latest\Geeky-Nextjs\out"
 $ftp_root = "ftp://$host_name/"
 $skip_dataset_upload = $true # Set to $false if you want to force upload the dataset
 $dry_run = $false # Set to $true to only simulate the deployment
@@ -35,7 +35,7 @@ function Upload-File {
     $localSize = (Get-Item $localFile).Length
     $remoteSize = Get-FtpFileSize $remotePath
 
-    if ($localSize -eq $remoteSize) {
+    if ($localSize -eq $remoteSize -and $localFile -notlike "*media.html") {
         Write-Host "Skipped (Same Size): ${localFile}" -ForegroundColor Gray
         return
     }
@@ -130,8 +130,8 @@ foreach ($file in $all_files) {
     $was_critical = ($relative -like "_next*" -or $file.Extension -eq ".css" -or $file.Extension -eq ".js")
     if ($was_critical) { continue }
 
-    # EXCLUSION RULE: Skip the dataset folder
-    if ($relative -like "dataset*" -or $relative -eq "dataset") {
+    # EXCLUSION RULE: Skip the dataset, pdf_files, and code_share folders
+    if ($relative -like "dataset*" -or $relative -eq "dataset" -or $relative -like "pdf_files*" -or $relative -like "code_share*") {
         continue
     }
 

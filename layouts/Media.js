@@ -284,8 +284,25 @@ const Media = ({ data }) => {
           {title}
         </h1>
 
-        {/* Podcast Section */}
+        {/* Featured Videos */}
         <div className="mt-8 sm:mt-10 md:mt-12">
+          <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            {podcasts.slice(0, 4).map((podcast, index) => (
+              <PodcastCard
+                key={`featured-${index}`}
+                title={podcast.title}
+                description={podcast.description}
+                date={podcast.date}
+                thumbnail={podcast.thumbnail}
+                link={podcast.link || podcastLink}
+                episodeNumber={podcast.episodeNumber}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Podcast Section */}
+        <div className="mt-12 sm:mt-16 md:mt-20">
           <div className="flex items-center mb-6 sm:mb-8">
             <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-[#E8EBF5] dark:bg-[#2a3561] text-[#4159A3] dark:text-[#E5F4F4] mr-3 sm:mr-4">
               <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -303,9 +320,9 @@ const Media = ({ data }) => {
           </div>
 
           <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            {podcasts.map((podcast, index) => (
+            {podcasts.slice(4).map((podcast, index) => (
               <PodcastCard
-                key={index}
+                key={`podcast-${index}`}
                 title={podcast.title}
                 description={podcast.description}
                 date={podcast.date}

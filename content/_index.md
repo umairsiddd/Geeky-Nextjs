@@ -1,7 +1,7 @@
 ﻿---
 banner:
   title: Zeeshan Zia
-  title_small: President, Retrocausal
+  title_small: Chief Scientist, Retrocausal
   content: >-
     I build AI systems that understand real-world activity. At Retrocausal, I focus on visual activity understanding, enabling models to interpret complex human workflows in industrial environments. Our platform is deployed with leading manufacturers and grounded in direct exposure to real operations.<br><br>
 

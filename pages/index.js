@@ -187,7 +187,7 @@ const Home = ({
   return (
     <Base
       title="Zeeshan Zia"
-      description="Zeeshan Zia - AI researcher and President of Retrocausal. Building AI systems for visual activity understanding in industrial environments. 50+ peer-reviewed papers, 25+ patents."
+      description="Zeeshan Zia - President of Retrocausal. Building AI systems for visual activity understanding in industrial environments. 50+ peer-reviewed papers, 25+ patents."
     >
       {/* Banner */}
       <section className="section banner relative pb-0">
