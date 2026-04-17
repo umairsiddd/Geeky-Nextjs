@@ -14,7 +14,7 @@ industry_experience:
 
 **Video LLMs for Temporal Reasoning in Long Videos.**
 
-_arXiv Preprint_ 2026 <span class="pub-badge technical-report">Technical Report</span>
+_ACL_ 2026 <span class="pub-badge conference">Conference</span>
 
 <PublicationButtons 
   downloads={[
@@ -24,19 +24,17 @@ _arXiv Preprint_ 2026 <span class="pub-badge technical-report">Technical Report<
   bibtex={`@inproceedings{fateh26temporalvlm,
  author = {Fawad J. Fateh and Umer Ahmed and Hamza Khan and M. Zeeshan Zia and Quoc-Huy Tran},
  title = {Video LLMs for Temporal Reasoning in Long Videos},
- booktitle = {arXiv Preprint},
+ booktitle = {ACL},
  year = {2026}
 }`}
   video="https://youtu.be/lEUluMdNHcc"
 />
 
-### 2025
-
 * Syed Ahmed Mahmood, Ali Shah Ali, Umer Ahmed, Fawad Javed Fateh, M. Zeeshan Zia, Quoc-Huy Tran
 
 **Procedure Learning via Regularized Gromov-Wasserstein Optimal Transport.**
 
-_arXiv Preprint_ 2025 <span class="pub-badge technical-report">Technical Report</span>
+_WACV_ 2026 <span class="pub-badge conference">Conference</span>
 
 <PublicationButtons 
   downloads={[
@@ -46,17 +44,21 @@ _arXiv Preprint_ 2025 <span class="pub-badge technical-report">Technical Report<
   bibtex={`@inproceedings{mahmood25procedure,
  author = {Syed Ahmed Mahmood and Ali Shah Ali and Umer Ahmed and Fawad Javed Fateh and M. Zeeshan Zia and Quoc-Huy Tran},
  title = {Procedure Learning via Regularized Gromov-Wasserstein Optimal Transport},
- booktitle = {arXiv Preprint},
- year = {2025}
+ booktitle = {WACV},
+ year = {2026}
 }`}
   video="https://youtu.be/UuTeflDyF-g"
 />
+
+### 2025
+
+
 
 * Ali Shah Ali, Syed Ahmed Mahmood, Mubin Saeed, Andrey Konin, M. Zeeshan Zia, Quoc-Huy Tran
 
 **Joint Self-Supervised Video Alignment and Action Segmentation.**
 
-_arXiv Preprint_ 2025 <span class="pub-badge technical-report">Technical Report</span>
+_ICCV_ 2025 <span class="pub-badge conference">Conference</span>
 
 <PublicationButtons 
   downloads={[
@@ -68,7 +70,7 @@ _arXiv Preprint_ 2025 <span class="pub-badge technical-report">Technical Report<
   bibtex={`@inproceedings{ali25joint,
  author = {Ali Shah Ali and Syed Ahmed Mahmood and Mubin Saeed and Andrey Konin and M. Zeeshan Zia and Quoc-Huy Tran},
  title = {Joint Self-Supervised Video Alignment and Action Segmentation},
- booktitle = {arXiv Preprint},
+ booktitle = {ICCV},
  year = {2025}
 }`}
   video="https://youtu.be/dGT6UvGZQwI?si=VsvslcYMFLvmycFM"

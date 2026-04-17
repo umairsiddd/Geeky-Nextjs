@@ -49,3 +49,7 @@ yarn-error.log*
 /public/dataset/
 /public/code_share/
 /public/pdf_files/
+
+# Deployment & sensitive scripts
+*.bat
+*.ps1

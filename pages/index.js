@@ -341,16 +341,33 @@ const Home = ({
           <PublicationItem
             authors="Fawad J. Fateh, Umer Ahmed, Hamza Khan, M. Zeeshan Zia, Quoc-Huy Tran"
             title="Video LLMs for Temporal Reasoning in Long Videos."
-            venue="arXiv Preprint"
+            venue="ACL"
             year="2026"
-            badge="Technical Report"
+            badge="Conference"
             pdfUrl="https://arxiv.org/abs/2412.02930"
             videoUrl="https://youtu.be/lEUluMdNHcc"
             abstract="We introduce TemporalVLM, a video large language model designed for temporal reasoning and fine-grained understanding in long videos. The model incorporates a time-aware clip encoder that divides long videos into short-term clips and jointly encodes frames with timestamps to capture time-sensitive local features. These features are then aggregated using a bidirectional long short-term memory (BiLSTM) module to model long-range temporal dependencies and global context. To facilitate evaluation, we present IndustryASM, a large-scale dataset of industry assembly processes with action labels and timestamps annotated by industrial engineers. Extensive experiments demonstrate that TemporalVLM outperforms prior video LLMs across multiple temporal reasoning tasks, including dense video captioning, temporal video grounding, video highlight detection, and temporal action segmentation. To the best of our knowledge, this work is the first to integrate LSTMs into video large language models."
             bibtex={`@inproceedings{fateh26temporalvlm,
  author = {Fawad J. Fateh and Umer Ahmed and Hamza Khan and M. Zeeshan Zia and Quoc-Huy Tran},
  title = {Video LLMs for Temporal Reasoning in Long Videos},
- booktitle = {arXiv Preprint},
+ booktitle = {ACL},
+ year = {2026}
+}`}
+          />
+
+          <PublicationItem
+            authors="Syed Ahmed Mahmood, Ali Shah Ali, Umer Ahmed, Fawad Javed Fateh, M. Zeeshan Zia, Quoc-Huy Tran"
+            title="Procedure Learning via Regularized Gromov-Wasserstein Optimal Transport."
+            venue="WACV"
+            year="2026"
+            badge="Conference"
+            pdfUrl="https://arxiv.org/abs/2507.15540"
+            videoUrl="https://youtu.be/UuTeflDyF-g"
+            abstract="This paper studies self-supervised procedure learning, which aims to discover key steps and their ordering from a collection of unlabeled instructional videos. Prior approaches typically rely on frame-to-frame video alignment, but their performance degrades in the presence of order variations, background or redundant frames, and repeated actions. To address these challenges, the proposed method introduces a self-supervised framework based on a fused Gromov-Wasserstein optimal transport formulation with a structural prior for temporal alignment. However, optimizing temporal alignment alone can lead to degenerate solutions where frame embeddings collapse into a single cluster. To prevent this, the framework integrates a contrastive regularization that encourages embedding diversity across frames. Extensive experiments on egocentric and third-person benchmarks demonstrate that the proposed regularized Gromov-Wasserstein optimal transport approach outperforms prior methods, including OPEL, while using a unified loss formulation that avoids balancing multiple competing objectives."
+            bibtex={`@inproceedings{mahmood25procedure,
+ author = {Syed Ahmed Mahmood and Ali Shah Ali and Umer Ahmed and Fawad Javed Fateh and M. Zeeshan Zia and Quoc-Huy Tran},
+ title = {Procedure Learning via Regularized Gromov-Wasserstein Optimal Transport},
+ booktitle = {WACV},
  year = {2026}
 }`}
           />
@@ -358,36 +375,21 @@ const Home = ({
           {/* 2025 */}
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 sm:mb-6 mt-6 sm:mt-8 md:mt-10 text-dark dark:text-darkmode-light">2025</h3>
 
-          <PublicationItem
-            authors="Syed Ahmed Mahmood, Ali Shah Ali, Umer Ahmed, Fawad Javed Fateh, M. Zeeshan Zia, Quoc-Huy Tran"
-            title="Procedure Learning via Regularized Gromov-Wasserstein Optimal Transport."
-            venue="arXiv Preprint"
-            year="2025"
-            badge="Technical Report"
-            pdfUrl="https://arxiv.org/abs/2507.15540"
-            videoUrl="https://youtu.be/UuTeflDyF-g"
-            abstract="This paper studies self-supervised procedure learning, which aims to discover key steps and their ordering from a collection of unlabeled instructional videos. Prior approaches typically rely on frame-to-frame video alignment, but their performance degrades in the presence of order variations, background or redundant frames, and repeated actions. To address these challenges, the proposed method introduces a self-supervised framework based on a fused Gromov-Wasserstein optimal transport formulation with a structural prior for temporal alignment. However, optimizing temporal alignment alone can lead to degenerate solutions where frame embeddings collapse into a single cluster. To prevent this, the framework integrates a contrastive regularization that encourages embedding diversity across frames. Extensive experiments on egocentric and third-person benchmarks demonstrate that the proposed regularized Gromov-Wasserstein optimal transport approach outperforms prior methods, including OPEL, while using a unified loss formulation that avoids balancing multiple competing objectives."
-            bibtex={`@inproceedings{mahmood25procedure,
- author = {Syed Ahmed Mahmood and Ali Shah Ali and Umer Ahmed and Fawad Javed Fateh and M. Zeeshan Zia and Quoc-Huy Tran},
- title = {Procedure Learning via Regularized Gromov-Wasserstein Optimal Transport},
- booktitle = {arXiv Preprint},
- year = {2025}
-}`}
-          />
+
 
           <PublicationItem
             authors="Ali Shah Ali, Syed Ahmed Mahmood, Mubin Saeed, Andrey Konin, M. Zeeshan Zia, Quoc-Huy Tran"
             title="Joint Self-Supervised Video Alignment and Action Segmentation."
-            venue="arXiv Preprint"
+            venue="ICCV"
             year="2025"
-            badge="Technical Report"
+            badge="Conference"
             pdfUrl="https://arxiv.org/abs/2503.16832"
             videoUrl="https://youtu.be/dGT6UvGZQwI?si=VsvslcYMFLvmycFM"
             abstract="This paper introduces a unified self-supervised framework for jointly performing video alignment and action segmentation using optimal transport. The proposed approach formulates self-supervised video alignment through a fused Gromov–Wasserstein optimal transport model with structural priors, enabling efficient GPU-based training and rapid convergence. Building upon this, the method is extended into a unified optimal transport formulation that simultaneously addresses frame-to-frame video alignment and frame-to-action segmentation within a single model. The joint approach reduces both training time and memory requirements compared to training separate models for each task. Extensive experiments across multiple video alignment and action segmentation benchmarks demonstrate state-of-the-art performance in video alignment and superior results in action segmentation. To the best of our knowledge, this is the first work to unify self-supervised video alignment and action segmentation within a single learning framework."
             bibtex={`@inproceedings{ali25joint,
  author = {Ali Shah Ali and Syed Ahmed Mahmood and Mubin Saeed and Andrey Konin and M. Zeeshan Zia and Quoc-Huy Tran},
  title = {Joint Self-Supervised Video Alignment and Action Segmentation},
- booktitle = {arXiv Preprint},
+ booktitle = {ICCV},
  year = {2025}
 }`}
           />
